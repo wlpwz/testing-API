@@ -1,0 +1,46 @@
+
+使用方法：
+--------------------------------------------------------------------------
+
+1. 下载该程序包后解压；
+
+2. 返回结果提供两种编码：GBK和UTF-8，可分别仿照gbkSample.php或utf8Sample.php编写程序，
+   其gbkSample.php和原来的接口相同，即默认返回GBK编码。如果需要返回UTF-8编码的数据，
+   则在LogdataClient::query()中增加第三个参数'utf-8'即可，$params数组中的中文也需要是utf-8编码。
+   require程序包中的LogdataClient.class.php，默认LogdataClient.class.php和nusoap.class.php在同一路径下。
+
+3. gbkSample.php中需要指定查询工具的ID以及控件内容，这些信息可以这样获取：
+   1) 使用查询工具查询后，在下方会显现【缺省URL地址】的链接，点击；
+   2) 获取URL地址后，参数s为工具ID，参数logdata_direct可忽略，其余为控件参数；
+   3) 指定控件参数值，如果是日期控件，必须指定，不能缺省，否则可能会返回(d)类错误；
+
+4. 执行gbkSample.php程序，获取结果。
+
+
+注意事项：
+--------------------------------------------------------------------------
+
+1. 返回结果提供两种编码：GBK和UTF-8，默认返回GBK编码的数据；
+
+2. 返回结果是数组形式，结构如下：
+
+///< 正确的情况
+$result = array(
+	'success' => true,
+	'info'    => array(
+		'title'   => array(......),
+		'content' => array(......),
+	),
+);
+
+///< 错误的情况
+$result = array(
+	'success' => false,
+	'info'    => "......",
+);
+
+3. 返回错误的原因可能有如下几种：
+(a) "Get machine ip failed."					获取客户端机器IP失败
+(b) "Authority is invalid."						没有对应权限
+(c) "Tool is non-existent."						该工具ID不存在
+(d) "Date-Component value is out of range."		日期范围超限，对应数据不存在

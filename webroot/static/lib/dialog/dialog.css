@@ -1,0 +1,220 @@
+.dialog-layer{
+	position:absolute;
+	left:50%;
+	top:100px;
+	border-radius:4px;-moz-border-radius:4px;
+	font-size:12px;
+	color:#666;
+	z-index:9999;
+}
+.dialog-bg{
+	background:url(images/layer_bg.png);
+	border-radius:4px;-moz-border-radius:4px;
+	padding:6px;
+}
+.dialog-content{
+	position:relative;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.dialog-title{
+	padding:5px;
+	font-size:14px;
+	padding-left:16px;
+	_padding-left:0;
+	vertical-align:middle;
+}
+.dialog-close{
+	background:url(images/close.png) no-repeat;
+	display:block;
+	height:20px; width:20px;
+	position:absolute;
+	right:5px; top:5px;
+}
+.dialog-footer{
+	padding:8px;
+	text-align:right;
+	display:none;
+}
+.dialog-btn{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	margin:0 3px;
+	height:24px;
+	line-height:23px;
+	padding:0 0 0 2px;
+	background:url(images/btn.gif) no-repeat;
+}
+.dialog-btn span{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	padding:0 10px 0 8px;
+	height:24px; line-height:23px;
+	background:url(images/btn.gif) no-repeat;
+}
+a.dialog-btn,a.dialog-btn:link,a.dialog-btn:visited{
+	color:#fff;
+}
+.dialog-footer a{text-decoration:none;cursor:pointer;}
+/*alert*/
+.info-alert{
+    padding:8px 8px 8px 80px;
+    min-height:40px;
+    _height:50px;
+}
+.info-alert-confirm{
+    background:url(images/icon-question.gif) no-repeat 15px 5px;
+}
+.info-alert-info{
+    background:url(images/icon-info.gif) no-repeat 15px 5px;
+}
+.info-alert-warning{
+    background:url(images/icon-warning.gif) no-repeat 15px 5px;
+}
+.info-alert-error{
+    background:url(images/icon-error.gif) no-repeat 15px 5px;
+}
+/*mask*/
+.info-mask-wrap{
+	background:#ddd;
+	position:fixed;
+	_position:absolute;
+	top:0;left:0;
+	width:100%;
+	height:100%;
+	_height:expression(documentElement.scrollTop + documentElement.offsetHeight + "px");
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+.info-mask-iframe{
+	width:100%;
+	height:100%;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+
+
+.info-layerbox-wrap{position:absolute;left:-9999px;}
+.info-layerbox-close{position:absolute; right:-10px; top:-10px; cursor:pointer; background:url(images/layerbox.png) no-repeat; width:31px; height:30px;behavior:url(/style/iepngfix.htc);}
+.info-layerbox-content{border-radius:15px;}
+.info-layerbox-content iframe{border-radius:10px;border:5px solid #0ea5e3; background:#fff; }
+
+/********** 以下是自定义样式，上面是公用样式**************/
+/**info,默认样式**/
+.info-dialog-bg{
+	background:url(images/layer_bg.png);
+}
+.info-dialog-title{
+	padding-left:16px;
+	ibackground:url(images/layer_icon.png) no-repeat 5px 7px #d3f3f9;
+    background:#44B0D1;
+}
+.info-dialog-info{
+	background:url(images/title_bg.png) repeat-x #79D3ED;
+    iborder: 1px solid #DFDFDF;
+    ibackground-image: -ms-linear-gradient(top,#F9F9F9,#ECECEC);
+    ibackground-image: -moz-linear-gradient(top,#F9F9F9,#ECECEC);
+    ibackground-image: -o-linear-gradient(top,#F9F9F9,#ECECEC);
+    ibackground-image: -webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#ECECEC));
+    ibackground-image: -webkit-linear-gradient(top,#F9F9F9,#ECECEC);
+    ibackground-image: linear-gradient(top,#F9F9F9,#ECECEC);
+    ifilter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#ECECEC'); /* IE6,IE7 */
+    i-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#ECECEC')"; /* IE8 */
+    color:#fff;
+}
+.info-dialog-close{
+	background:url(images/close.png?v=1) no-repeat;
+}
+.info-dialog-btn-ok{
+    background-position:0 -456px;
+}
+.info-dialog-btn-ok span{
+    background-position:right -480px;
+}
+a.info-dialog-btn-cancel,a.info-dialog-btn-cancel:link,a.info-dialog-btn-cancel:visited{
+	color:#666;
+	background-position:0 -144px;
+}
+.info-dialog-btn-cancel span{
+	background-position:right -168px;
+}
+/**gray**/
+.gray-dialog-bg{
+	background:#fff;
+}
+.gray-dialog-content{
+	border:none;
+}
+.gray-dialog-title{
+	background:url(images/layer_title.png) 0 0;
+	color:#fff;
+}
+.gray-dialog-close{
+	background:url(images/gray_close.png) no-repeat;
+}
+.gray-dialog-btn-ok span{
+	background-position:right -24px;
+}
+a.gray-dialog-btn-cancel,a.gray-dialog-btn-cancel:link,a.gray-dialog-btn-cancel:visited{
+	color:#666;
+	background-position:0 -144px;
+}
+.gray-dialog-btn-cancel span{
+	background-position:right -168px;
+}
+.info-msg-wrap{
+    color:#000;
+    font-size:12px;
+    position:fixed;
+    top:0;
+    left:50%;
+    padding:0 20px;
+    line-height:30px;
+    border:1px solid #999;
+    border-top:none;
+    background:#f2f2f2; 
+    -moz-border-radius:0 0 5px 5px;
+    border-radius:0 0 5px 5px;
+    box-shadow:2px 2px 2px #ddd;
+    opacity:0.7;
+    filter:alpah(opacity=70);
+}
+
+/*  为对话框中的表格显示引入的样式    */
+table.sGrid{
+    width:100%;
+    border-collapse:collapse; 
+    itable-layout:fixed;
+    font-size:12px; 
+    margin-top:1px; 
+}
+table.sGrid th{
+    ibackground:#F2FAFA;
+	ifilter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F2FAFA',endColorstr='#E0F0FA');
+	ibackground:-webkit-gradient(linear,0% 0,0% 100%,from(#F2FAFA),to(#E0F0FA));
+	ibackground:-moz-linear-gradient(-90deg,#F2FAFA,#E0F0FA);
+    iwhite-space:nowrap; 
+    iword-break:keep-all;
+    font-weight:bolder;
+    -moz-user-select:none;
+}
+table.sGrid th,.sGrid td{
+    padding:4px 2px;
+    border:1px solid #ddd;
+    text-align:center; 
+    word-wrap:break-word;
+}
+table.sGrid tbody tr:hover{
+    background-color:#f2f2f2;
+}
+table.sGrid tbody tr:nth-child(even){
+    ibackground-color:#f1f1f1;
+}
+.sGrid_wrap{border:1px solid #528EC9;}
+table.sGrid th{background:#679ED3;color:#fff; border-color:#fff;}
+table.sGrid td{background:#eee;padding:5px 2px; border-color:#fff;}
+table.sGrid tbody tr:hover td{
+    background-color:#EDF6F7;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-cn" style="height:100%">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" href="static/css/layout.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="static/css/header.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/7.3/styles/github.min.css"></link>
+        <link rel="stylesheet" href="static/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="static/css/doc.css"></link>
+        <link rel="stylesheet" href="static/css/mybase.css"></link>
+        <!--script src="/static/js/jquery.min.js"></script-->
+        <link href="static/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <script src="/static/js/jquery-1.11.1.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <!--script src="static/js/jquery.js"></script>
+        <script src="static/js/bootstrap.js"></script>
+        <script src="static/js/holder.js"></script-->
+
+        <title>DATASAFE问题定位</title>
+        <link rel="shortcut icon" type="image/x-icon" href="pic/pat.png">
+
+        <!-- Custom styles for this template -->
+        <link href="static/css/carousel.css" rel="stylesheet">
+        <style type="text/css" id="holderjs-style"></style>
+    </head>
+<body class="home-template">
+<div class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand hidden-sm" href="http://data-safe.baidu.com/" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'navbar-首页'])">DataSafe</a>
+        </div>
+        <div class="navbar-collapse collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a id="btn-jike-video" href="http://cq01-testing-ps7109.vm.baidu.com:8911/?r=datasafe/index" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', '统一回灌接口问题追查'])">统一回灌接口问题追查</a></li>
+            <li><a href="http://cq01-testing-ps7109.vm.baidu.com:8911/?r=datasafe/tools" target="_blank">统一回灌数据状态查询</a></li>
+            <li><a href="#" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'jquery'])">统一回灌LB|BL查询</a></li>
+            <li class="active"><a href="http://cq01-testing-ps7109.vm.baidu.com:8911/?r=datasafe/tools" target="_blank">工具</a></li>
+            <li><a href="http://cq01-testing-ps7109.vm.baidu.com:8911/?r=requirement/list" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'jquery'])">需求管理</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right hidden-sm">
+            <li><a href="/about/" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'about'])">关于</a></li>
+          </ul>
+        </div>
+   </div>
+</div>
+<!--
+<div class="jumbotron masthead"></div>
+<div class="container projects">
+<div class="row">
+<div class="col-md-2">
+    <dl class="dl-group top-border">
+        <dt class="dt-group-title">常用工具</dt>
+        <dd class="dd-group-item"><a href="?r=datasafe/tools">路径检查工具</a></dd>
+        <dd class="dd-group-item"><a href="?r=datasafe/toolsbogus">回灌命令检查工具</a></dd>
+    </dl>
+</div>
+<div class="col-md-10">
+<script type="text/javascript" src="static/js/run.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.js"></script>
+<!--blockquote class="babel-callout babel-callout-warning"-->
+<!--/blockquote-->
+<h4>数据路径检查工具</h4>
+-->
+<!-- <div class="panel panel-default">
+	<div class="panel-heading">条件输入</div></br>
+     <!--input type="radio" name="ecrunposition" id= "ecrunposition0" value="default" checked/-->
+     &nbsp;&nbsp;<font>ftp地址 </font> &nbsp;
+     <input id='url_0' type="text" style="width: 600px;height:30px;border-bottom:2px solid #a9c6c9;" placeholder='ftp路径需要加上ftp://'>
+     <input type="checkbox" name="ftp_schema" id="schema_0" value="default">
+     <font>schema检查</font></br></br>
+     &nbsp;&nbsp;<font>hdfs地址</font>
+     <input id='url_1' type="text" style="width: 600px;height:30px;border-bottom:2px solid #a9c6c9;" placeholder='请输入hdfs路径'>
+     <input type="checkbox" name="hdfs_schema" id="schema_1" value="default">
+     <font>schema检查</font></br>
+<h4 class="text-success"><button type="button" class="btn btn-primary" style="color: black;background-color: rgba(255, 255, 240, 0.05);margin-left: 300px;margin-top: 20px;" id="subtn">查询</button></h4>
+</div>
+</div>
+<table id="lbstate" class="table table-bordered table-striped table-hover" width="100%" style="display:'ture';text-align:left;font-size:12px;"> 
+                <thead> 
+                <tr style="background-color:#d9edf7">
+                    <th width="100%">检查结果</th>
+                </tr>   
+                </thead>
+                <tbody style="font-size:12px">
+                <?php
+                  if(isset($check_result)) {
+                    foreach($check_result as $item) {
+                      echo "<tr>";
+                      echo "<td>" . $item["check_path"] . "</td>";
+                      echo "</tr>";
+                  }
+                ?>
+                </tbody>
+                </table>
+
+</div>
+</div>
+</div>
+</div>
+-->
+</body>
+</html>
+<!--
+<script type="text/javascript">
+function setCookie(name, value, seconds) {  
+ seconds = seconds || 0;   //seconds有值就直接赋值，没有为0，这个根php不一样。  
+ var expires = "";  
+ if (seconds != 0 ) {      //设置cookie生存时间  
+ var date = new Date();  
+ date.setTime(date.getTime()+(seconds*1000));  
+ expires = "; expires="+date.toGMTString();  
+ }  
+ document.cookie = name+"="+escape(value)+expires+"; path=/";   //转码并赋值  
+}  
+function getCookie(name) {  
+ var nameEQ = name + "=";  
+ var ca = document.cookie.split(';');    //把cookie分割成组  
+ for(var i=0;i < ca.length;i++) {  
+ var c = ca[i];                      //取得字符串  
+ while (c.charAt(0)==' ') {          //判断一下字符串有没有前导空格  
+ c = c.substring(1,c.length);      //有的话，从第二位开始取  
+ }  
+ if (c.indexOf(nameEQ) == 0) {       //如果含有我们要的name  
+ return unescape(c.substring(nameEQ.length,c.length));    //解码并截取我们要值  
+ }  
+ }  
+ return false;  
+}  
+  
+//清除cookie  
+function clearCookie(name) {  
+ setCookie(name, "", -1);  
+}  
+$(document).ready(function(){ 
+    var flag = getCookie('select');
+    if(flag == "flag2"){
+        document.getElementById("ecrunposition1").checked=true;
+        changeValue();
+        clearCookie("select");
+    }else{
+        document.getElementById("ecrunposition0").checked=true;
+        changeValue();
+        clearCookie("select");
+    }
+});
+function changeValue(){
+    var check0 = document.getElementById("ecrunposition0").checked;
+    var check1 = document.getElementById("ecrunposition1").checked;
+
+    if(check1)
+    {
+        document.getElementById('table_machine_url').style.display='none';
+        document.getElementById('table_machine_file').style.display='';
+        document.getElementById('lbstateh').style.display='none';
+        document.getElementById('lbstate').style.display='none';
+        document.getElementById('lbblh').style.display='';
+        document.getElementById('lbbl').style.display='';
+    }
+    if(check0)
+    {
+        document.getElementById('table_machine_file').style.display='none';
+        document.getElementById('table_machine_url').style.display='';
+        document.getElementById('lbstateh').style.display='';
+        document.getElementById('lbstate').style.display='';
+        document.getElementById('lbblh').style.display='none';
+        document.getElementById('lbbl').style.display='none';
+    }
+}
+function setCookie(name, value, seconds) {  
+ seconds = seconds || 0;   //seconds有值就直接赋值，没有为0，这个根php不一样。  
+ var expires = "";  
+ if (seconds != 0 ) {      //设置cookie生存时间  
+ var date = new Date();  
+ date.setTime(date.getTime()+(seconds*1000));  
+ expires = "; expires="+date.toGMTString();  
+ }  
+ document.cookie = name+"="+escape(value)+expires+"; path=/";   //转码并赋值  
+}  
+function getCookie(name) {  
+ var nameEQ = name + "=";  
+ var ca = document.cookie.split(';');    //把cookie分割成组  
+ for(var i=0;i < ca.length;i++) {  
+ var c = ca[i];                      //取得字符串  
+ while (c.charAt(0)==' ') {          //判断一下字符串有没有前导空格  
+ c = c.substring(1,c.length);      //有的话，从第二位开始取  
+ }  
+ if (c.indexOf(nameEQ) == 0) {       //如果含有我们要的name  
+ return unescape(c.substring(nameEQ.length,c.length));    //解码并截取我们要值  
+ }  
+ }  
+ return false;  
+}  
+  
+//清除cookie  
+function clearCookie(name) {  
+ setCookie(name, "", -1);  
+}  
+$('#subtn').click(function() {
+    var check0 = document.getElementById("ecrunposition0").checked;
+    var check1 = document.getElementById("ecrunposition1").checked;
+    if(check0)
+    {
+        var data_version_id = $('#url').val();
+        window.location.href="index.php?r=datasafe/submit&data_version_id=" + data_version_id + "&flag=1";
+        setCookie("select","flag1",1800);       
+    }else if(check1)
+    {
+            var data_version_id = document.getElementById("path").value;
+            window.location.href="index.php?r=datasafe/submit&data_version_id=" + data_version_id + "&flag=2";
+            setCookie("select","flag2",1800);       
+    }
+    
+});
+</script> -->

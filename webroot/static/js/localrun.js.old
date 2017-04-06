@@ -1,0 +1,349 @@
+(function(){
+     var Downstream = function(){
+		this._init();
+	 }
+
+	 Downstream.prototype._init = function(){
+		var _this = this;
+		_this.addExe();
+	}
+	Downstream.prototype.addExe = function(){
+		$('#submit_task').bind('click', function(){
+            var machine_select = $('input:radio[name="radiobutton_machine"]:checked').val();
+           /* if (machine_select == "define_machine")
+            {
+                var define_machine_machine = $('#define_machine_machine').val();
+                var define_machine_deploypath = $('#define_machine_deploypath').val(); 
+                var define_machine_password = $('#define_machine_password').val();
+                if(define_machine_machine == '' ){
+                    alert('请输入部署机器地址！');
+                    return;
+                }
+
+                else if(define_machine_deploypath == '' ){
+                    alert('请输入部署路径！');
+                    return;
+                }
+                
+                else if(define_machine_password == '' ){
+                    alert('请输入机器密码！');
+                    return;
+                }
+
+                var new_code_select = $('input:radio[name="radiobutton_bin_new"]:checked').val();
+				var old_code_select = $('input:radio[name="radiobutton_bin_old"]:checked').val();
+                if (new_code_select == "product_new_code")
+                {
+                    var product_new_version = $('#new_scm').val();
+				
+                    if( product_new_version == '' ){
+                        alert('请输入新EC版本！');
+                        return;
+                    }
+
+					//接受旧版本数据
+					if(old_code_select == "product_old_code")
+					{
+						var product_old_version = $('#old_scm').val();
+						if( product_old_version == '' ){
+			                alert('请输入旧EC版本！'); 
+							return;
+						   }
+						
+                    	var data_select = $('input:radio[name="radiobutton_data"]:checked').val();           
+                    	if (data_select == "platform_data")
+                    	{
+                        	var platform_data_type = $('#platform_data_type').val();
+                        	var platform_data_num  = $('#platform_data_num').val();
+
+                        	if(platform_data_type == '' ){
+                            	alert('请选择数据类型！');
+                            	return;
+                        	}
+
+                        	if(platform_data_num == '' ){
+                            	alert('请选择数据数量！');
+                            	return;
+                        	}
+
+                        	var param = {machine_select:machine_select, define_machine_machine:define_machine_machine, define_machine_password:define_machine_password, define_machine_deploypath:define_machine_deploypath,code_select:code_select,product_new_version:product_new_version,product_old_version:product_old_version,data_select:data_select,platform_data_type:platform_data_type,platform_data_num:platform_data_num};
+
+                    	}
+                    	if(data_select == "define_data")
+                    	{
+                        	var define_data_ftp_path = $('#define_data_ftp_path').val();
+
+                        	if(define_data_ftp_path == '' ){
+                            	alert('请输入DATA的FTP地址！');
+                            	return;
+                        	}
+                        
+                        	var param = {machine_select:machine_select, define_machine_machine:define_machine_machine, define_machine_password:define_machine_password, define_machine_deploypath:define_machine_deploypath,code_select:code_select,product_new_version:product_new_version,product_old_version:product_old_version,data_select:data_select,define_data_ftp_path:define_data_ftp_path};
+
+                    	}         
+
+                    	if(data_select == '' ){
+                        	alert('请选择输入数据！');
+                        	return;
+                    	}
+					}
+					else if(old_code_select == "define_old_code" )
+					{
+						var define_code_old_code_path = $('#define_code_old_code_path').val();
+						if(define_code_old_code_path == '' ){
+							alert('请输入旧EC的FTP地址！');
+							return;
+				          }
+					
+                     
+						var data_select = $('input:radio[name="radiobutton_data"]:checked').val();           
+						if (data_select == "platform_data")
+						{
+							var platform_data_type = $('#platform_data_type').val();
+							var platform_data_num  = $('#platform_data_num').val();
+
+							if(platform_data_type == '' ){
+								alert('请选择数据类型！');
+								return;
+							}
+
+							if(platform_data_num == '' ){
+								alert('请选择数据数量！');
+								return;
+							}
+
+							var param = {machine_select:machine_select, define_machine_machine:define_machine_machine, define_machine_password:define_machine_password, define_machine_deploypath:define_machine_deploypath,code_select:code_select,product_new_version:product_new_version,product_old_version:product_old_version,data_select:data_select,platform_data_type:platform_data_type,platform_data_num:platform_data_num};
+
+						}
+						if(data_select == "define_data")
+						{
+							var define_data_ftp_path = $('#define_data_ftp_path').val();
+
+							if(define_data_ftp_path == '' ){
+								alert('请输入DATA的FTP地址！');
+								return;
+							}
+                        
+							var param = {machine_select:machine_select, define_machine_machine:define_machine_machine, define_machine_password:define_machine_password, define_machine_deploypath:define_machine_deploypath,code_select:code_select,product_new_version:product_new_version,define_code_old_code_path:define_code_old_code_pat        h,data_select:data_select,define_data_ftp_path:define_data_ftp_path};
+
+						}         
+
+						if(data_select == '' ){
+							alert('请选择输入数据！');
+							return;
+						}
+                    }
+
+				}
+                if(code_select == "define_code")
+                {
+                    var define_code_new_code_path = $('#define_code_new_code_path').val();
+                    var define_code_old_code_path = $('#define_code_old_code_path').val();
+
+                    if(define_code_new_code_path == '' ){
+                        alert('请输入新EC的FTP地址！');
+                        return;
+                    }
+
+                    if(define_code_old_code_path == '' ){
+                        alert('请输入旧EC的FTP地址！');
+                        return;
+                    }
+
+                    var data_select = $('input:radio[name="radiobutton_data"]:checked').val();           
+                    if (data_select == "platform_data")
+                    {
+                        var platform_data_type = $('#platform_data_type').val();
+                        var platform_data_num  = $('#platform_data_num').val();
+
+                        if(platform_data_type == '' ){
+                            alert('请选择数据类型！');
+                            return;
+                        }
+
+                        if(platform_data_num == '' ){
+                            alert('请选择数据数量！');
+                            return;
+                        }
+
+                        var param = {machine_select:machine_select, define_machine_machine:define_machine_machine, define_machine_password:define_machine_password, define_machine_deploypath:define_machine_deploypath,code_select:code_select,define_code_new_code_path:define_code_new_code_path,define_code_old_code_path:define_code_old_code_path,data_select:data_select,platform_data_type:platform_data_type,platform_data_num:platform_data_num};
+
+                    }
+                    if(data_select == "define_data")
+                    {
+                        var define_data_ftp_path = $('#define_data_ftp_path').val();
+
+                        if(define_data_ftp_path == '' ){
+                            alert('请输入DATA的FTP地址！');
+                            return;
+                        }
+                        
+                        var param = {machine_select:machine_select, define_machine_machine:define_machine_machine, define_machine_password:define_machine_password, define_machine_deploypath:define_machine_deploypath,code_select:code_select,define_code_new_code_path:define_code_new_code_path,define_code_old_code_path:define_code_old_code_path,data_select:data_select,define_data_ftp_path:define_data_ftp_path};
+
+                    }         
+
+                    if(data_select == '' ){
+                        alert('请选择输入数据！');
+                        return;
+                    }
+                
+
+                }   
+                if(code_select == '' ){
+                    alert('请选择代码来源！');
+                    return;
+                }
+
+            }
+
+			if(machine_select == 'undefined'){
+				alert('请选择部署机器！'); 
+                return;
+			}
+            */
+            if(machine_select == 'default_machine'){
+                var code_select = $('input:radio[name="radiobutton_bin"]:checked').val();
+                if (code_select == "product_code")
+                {
+                    var product_new_version = $('#product_code_new_version').val();
+                    var product_old_version = $('#product_code_old_version').val(); 
+
+                    if( product_new_version == '' ){
+                        alert('请选择新EC版本！');
+                        return;
+                    }
+
+                    if( product_old_version == '' ){
+                        alert('请选择旧EC版本！');
+                        return;
+                    }
+                     
+                    var data_select = $('input:radio[name="radiobutton_data"]:checked').val();           
+                    if (data_select == "platform_data")
+                    {
+                        var platform_data_type = $('#platform_data_type').val();
+                        var platform_data_num  = $('#platform_data_num').val();
+
+                        if(platform_data_type == '' ){
+                            alert('请选择数据类型！');
+                            return;
+                        }
+
+                        if(platform_data_num == '' ){
+                            alert('请选择数据数量！');
+                            return;
+                        }
+
+                        var param = {machine_select:machine_select,code_select:code_select,product_new_version:product_new_version,product_old_version:product_old_version,data_select:data_select,platform_data_type:platform_data_type,platform_data_num:platform_data_num};
+
+                    }
+                    if(data_select == "define_data")
+                    {
+                        var define_data_ftp_path = $('#define_data_ftp_path').val();
+
+                        if(define_data_ftp_path == '' ){
+                            alert('请输入DATA的FTP地址！');
+                            return;
+                        }
+                        
+                        var param = {machine_select:machine_select,code_select:code_select,product_new_version:product_new_version,product_old_version:product_old_version,data_select:data_select,define_data_ftp_path:define_data_ftp_path};
+
+                    }         
+
+                    if(data_select == '' ){
+                        alert('请选择输入数据！');
+                        return;
+                    }
+                
+
+                }
+                if(code_select == "define_code")
+                {
+                    var define_code_new_code_path = $('#define_code_new_code_path').val();
+                    var define_code_old_code_path = $('#define_code_old_code_path').val();
+
+                    if(define_code_new_code_path == '' ){
+                        alert('请输入新EC的FTP地址！');
+                        return;
+                    }
+
+                    if(define_code_old_code_path == '' ){
+                        alert('请输入旧EC的FTP地址！');
+                        return;
+                    }
+
+                    var data_select = $('input:radio[name="radiobutton_data"]:checked').val();           
+                    if (data_select == "platform_data")
+                    {
+                        var platform_data_type = $('#platform_data_type').val();
+                        var platform_data_num  = $('#platform_data_num').val();
+
+                        if(platform_data_type == '' ){
+                            alert('请选择数据类型！');
+                            return;
+                        }
+
+                        if(platform_data_num == '' ){
+                            alert('请选择数据数量！');
+                            return;
+                        }
+
+                        var param = {machine_select:machine_select,code_select:code_select,define_code_new_code_path:define_code_new_code_path,define_code_old_code_path:define_code_old_code_path,data_select:data_select,platform_data_type:platform_data_type,platform_data_num:platform_data_num};
+
+                    }
+                    if(data_select == "define_data")
+                    {
+                        var define_data_ftp_path = $('#define_data_ftp_path').val();
+
+                        if(define_data_ftp_path == '' ){
+                            alert('请输入DATA的FTP地址！');
+                            return;
+                        }
+                        
+                        var param = {machine_select:machine_select,code_select:code_select,define_code_new_code_path:define_code_new_code_path,define_code_old_code_path:define_code_old_code_path,data_select:data_select,define_data_ftp_path:define_data_ftp_path};
+
+                    }         
+
+                    if(data_select == '' ){
+                        alert('请选择输入数据！');
+                        return;
+                    }
+                
+
+                }   
+                if(code_select == '' ){
+                    alert('请选择代码来源！');
+                    return;
+                }
+
+            }
+            
+            var reqUrl = "?r=run/localrun";
+            $.ajax({
+                type:"POST",
+                async:true,
+                url:reqUrl,
+                data:param,
+                success:function(ajaxObj){
+                    var result = $.parseJSON(ajaxObj);
+                                            if (result.result== 1)
+                                               {
+                                                    var id=result.task_id
+                                                    alert("任务启动成功，请在“结果分析-->本地运行”查看进度"); 
+                                               }
+
+                                              
+            
+                },
+                error:function(){
+                  	alert("请联系QA反馈您遇到的问题!");
+
+                }
+            });
+
+    });
+}
+
+new  Downstream();
+
+})();

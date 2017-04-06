@@ -1,0 +1,154 @@
+<?php
+	$r['topic'] = "compile";
+	$this->beginContent('/layouts/main',array('topic'=>$r));
+?>
+<div>
+
+
+
+
+<ul class="nav nav-pills">
+  <li class="active"><a href="#">¿¿</a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+</ul>
+
+
+
+	
+<form id='form'>
+	<div>
+       
+
+
+
+		<div class="page-header">
+			<h2></h2>
+		</div>
+        <div>
+            <table>
+								<tr>
+										<td width="50%">
+				                        <div class="btn-group">
+					                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">sssssss<span class="caret"></span></button>
+					                        <ul class="dropdown-menu" role="menu">
+																	<?php
+																	    $array = split("&&",$version_list);
+																	    for ($i = 0;$i < count($array); $i++)
+																	    {
+																	        echo "<li><a onclick=\"getEcversion(this)\">".$array[$i]."</a></li>";
+																	    }
+																	?>
+					                        </ul>
+					                      </div>
+					                      <br/>
+										</td>
+										<td width="50%">
+
+				                        <div class="btn-group">
+					                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+					                        <ul class="dropdown-menu" role="menu">
+																	<?php
+																	    $array = split("&&",$version_list);
+																	    for ($i = 0;$i < count($array); $i++)
+																	    {
+																	        echo "<li><a onclick=\"getEcversion(this)\">".$array[$i]."</a></li>";
+																	    }
+																	?>
+					                        </ul>
+					                      </div>
+																<br/>
+										</td>
+					
+								</tr>
+								<tr>
+									<td>
+										<div class="input-group">
+                                <span class="input-group-addon"></span>
+                                <input type="text" class="form-control" placeholder="https://svn.baidu.com/ps/spider/tags/i18n-ec/i18n-ecxxxxxxx"/>
+                    </div>
+									</td>
+									<td>
+										<div class="input-group">
+                                <span class="input-group-addon"></span>
+                                <input type="text" class="form-control" placeholder="https://svn.baidu.com/ps/spider/tags/i18n-ec/i18n-ecxxxxxxx"/>
+                    </div>
+									</td>
+								</tr>
+						</table>
+		    </div>
+
+
+
+
+		<br/>
+		<br/>
+
+
+		<h2></h2>
+        <div id="basicparameter">
+        <table>
+            <div id="dform">
+            </div>
+            <tr>
+              <td>
+								<div align="center">
+									<div class="btn-group">
+									<button  class="btn btn-default" type='button' id='addlib'></button>
+									</div>
+								</div>
+							</td>
+            </tr>
+        </table>
+        </div>
+        
+    <hr/>
+
+
+		<br/>
+		<br/>
+			
+        <table>
+            <tr>
+            	<td>
+            		<div align="center">
+            			<div class='btn-group'>
+            				<button class='btn btn-default' id="subtn" type=submit ></button>
+            			</div>
+            		</div>
+            	</td>
+            </tr>
+				</table>
+  </div>
+</form>
+
+
+</div>
+<script>
+	var list = "<?php echo $version_list; ?>" ;
+	alert(list);
+	
+	
+	
+	function append(){
+    auto_complete_id = auto_complete_id + 10;
+    old_lib_id = auto_complete_id + 1;
+
+    var p=$('#dform p:last');
+    var last=p.length>0? parseInt(p.attr('cc'))+1:0;
+    p=$("<p cc='"+last+"'></p>").appendTo('#dform');
+    p.append("<table><tr><td><div class='input-group'><span class='input-group-addon'>Ec_version<font color='#FF0000'> * </font></span><input class='form-control' name='lib_infos["+last+"][libmodulename]' id='"+auto_complete_id+"' placeholder='ps/se/page-value'></div></td><td><div class='input-group'><span class='input-group-addon'>ec_version1<font color='#FF0000'> * </font></span><input type='text' class='form-control' size='10' name='lib_infos["+last+"][libnewversion]' placeholder='1.0.33.1'></div></td><td><div class='input-group'><span class='input-group-addon'>ec_version2<font color='#FF0000'> * </font></span><input type='text' class='form-control' size='10' id='"+old_lib_id+"' name='lib_infos["+last+"][liboldversion]' placeholder='1.0.32.0'></div></td><td><div class='btn-group'><button class='btn btn-default'>add</button></div></td></tr></table>");
+    
+	p.find('button').click(function(){
+        $('#deleted').append("<input name='deleted[]' type='hidden' value='"+$(this).parent().parent().parent().parent().parent().attr('cc')+"'/>");
+        $(this).parent().parent().parent().parent().parent().remove();
+    });
+}
+
+	
+	
+	$('#addlib').click(function(){
+    append();
+});
+</script>
+<?php $this->endContent(); ?>

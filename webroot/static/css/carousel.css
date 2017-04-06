@@ -1,0 +1,524 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+html,body {
+  color: #535353;
+  padding:0px;
+  
+  font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体"
+  
+  margin:0;
+  height:100%; 
+}
+#container {
+	position:relative;
+	width:100%;
+	min-height:100%;
+	height: auto !important;
+	height: 100%;
+}
+#page {
+
+padding-bottom: 100px;/*高度等于footer的高度*/
+}
+#foot {
+position: relative;
+margin-top: -100px;/*等于footer的高度*/
+height: 100px;
+clear:both;
+bottom:0px;
+}
+/**************affix************/
+
+ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+
+
+
+
+
+/*bread*/
+.head_line{
+	font-size:14px;
+	display:block;
+	margin:0 0 25px 0;
+	border-bottom:1px dotted #e4e9f0;
+}
+.breadcrumb{
+	top:9px;
+	padding-right:0;
+	background:none;
+	position:relative;
+	
+}
+.breadcrumb>.active{
+	color:#428bca;
+}
+
+
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.navbar.navbar-inverse.navbar-static-top {  
+	/*background: #5cb85c;  
+	border-color: #398439;
+	*/
+	background-color:#b4ceec;
+	border-color:#b4ceec;	
+}
+/*
+.navbar.navbar-inverse.navbar-static-top a{  
+	color:#fff;
+}
+.navbar.navbar-inverse.navbar-static-top a:hover
+{  
+	color:#0A64A4;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus
+{  
+	background:#398439;  
+	font-weight:700;
+}
+.navbar-inverse .navbar-nav>.active>a:hover 
+{  
+	background:#398439;  
+	color:#fff;  
+	font-weight:700;
+}
+*/
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+  width:100%;
+  height:50px;
+}
+/*.container > .navbar-header, .container > .navbar-collapse{
+	margin-right:40px;
+	font:16px "Microsoft YaHei";
+	font-weight:bold;
+}*/
+.navbar>.container .navbar-brand{
+	margin-left:15px;
+	padding-top:18px;
+	padding-bottom:5px;
+	font-size:22px;
+	float:left;
+}
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+background-color:inherit;
+}
+.navbar-nav > li > a{
+	padding-top:20px;
+	padding-bottom:6px;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 410px;
+  margin-bottom: 0px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 410px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 410px;
+}
+.carousel .ec-txt{
+	background:none;
+	margin-top:100px;
+	text-align:center;
+}
+.carousel.ec-txt h2{
+	
+	color:blue;
+	
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top:20px;
+  width:25%;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.marketing .icon_imgwap {
+    text-align: center;
+    border-radius: 75px;
+}
+.marketing .icon_1 {
+    background-color: #bd3e25;
+    color: #f5bd48;
+}
+.marketing .icon_2{
+    background-color: #334d5c;
+    color: #f5bd48;
+}
+.marketing .icon_3 {
+    background-color: #efc84a;
+    color: #ab4921;
+}
+.marketing .icon_4 {
+    background-color: #99ff99;
+    color: #efc84a;
+}
+.marketing .icon_5 {
+    background-color: #cc6666;
+    color: #efc84a;
+}
+.marketing .icon_6 {
+    background-color: #0099cc;
+    color: #efc84a;
+}
+.marketing .icon_7 {
+    background-color: #ff9933;
+    color: #efc84a;
+}
+.marketing a {
+    color: white;
+    text-decoration: none;
+}
+     
+.marketing  a:hover,
+    a:focus {
+    color: #2a6496;
+    text-decoration: underline;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin-top: 50px; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 50px;
+    padding-right: 50px;
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 0px;
+	border-bottom:1px solid #b4ceec;
+	height:50px;
+  }
+  .navbar-wrapper .container {
+    padding-left:  0px;
+    padding-right: 0px;
+  }
+  .navbar-wrapper .navbar {
+    padding-left:  0;
+    padding-right: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+/****add-table******/
+	.mar-left4
+	{
+		margin-left:4px;
+}
+	.col-item
+	{
+		margin-bottom:5px;
+}
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+}
+
+.footer{
+	width:100%;
+	height:100px;
+	min-width:1200px;
+	color:#8F97A6;
+	font-size:12px;
+	background-color:#1E1D27;
+	padding-top:20px;
+}
+.footer-wrapper{
+	width:1200px;
+	margin:0 auto;
+	position:relative;
+	top:20px;
+	width:1200px;
+	margin:0 auto;
+	position:relative;
+	top:20px;}
+.footer .f-right{
+//	font-family:arial;
+	padding-bottom:20px;
+	color:#999;
+	float:right;
+	margin-right:50px;
+}
+.footer .copyright{
+	margin-top:15px;
+}
+.footer a{
+	color:#8F97A6;
+}
+.col-md-4{
+	padding-left:20px;
+	font-family:"Microsoft YaHei";
+	font-weight:bold;
+}
+/*h1, h2, h3{
+	font-family:"Microsoft YaHei";
+	color:#999999;
+	margin-top:15px;
+	margin-bottom:15px;
+}*/
+.headline{
+	font-size:22px;
+	font-weight:bold;
+	color:#999999;
+	margin-top:15px;
+    margin-bottom:15px;
+}
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+/* page-side*/
+.page-sidebar{
+	margin-left:-89px;
+	padding:0;
+	width:224px;
+	position:absolute;
+	display:block;
+	background-color:#3d3d3d;
+
+	min-height:100%;
+	bottom:-100px;
+	top:0px;
+	box-shadow: 1px 1px 2px #f4f4f4;
+}
+.page-content{
+display:block;
+		margin-left:150px;
+		margin-right:0;
+		margin-top:0;
+		min-height:100%;
+width:93%;
+padding:0;
+}
+.page-container
+{
+	position:relative;
+}
+ul.page-sidebar-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	padding: 0; 
+}
+ul.page-sidebar-menu > li {
+	display: block;
+	line-height:20px;
+	display: block;
+	position: relative;
+	margin: 0;
+	border: 0px;
+	padding:0px;
+}
+ul.page-sidebar-menu > li.start > a {
+	   border-top-color: transparent !important;
+}
+ul.page-sidebar-menu > li:last-child > a,
+	ul.page-sidebar-menu > li.last > a {
+		   border-bottom-color: transparent !important;
+	}
+.page-sidebar-closed ul.page-sidebar-menu > li > a > .title,
+	.page-sidebar-closed ul.page-sidebar-menu > li > a > .arrow {
+		  display: none !important;
+	}
+.page-sidebar-closed ul.page-sidebar-menu > li:hover .selected {
+	  display: none;
+}
+ul.page-sidebar-menu > li.active > a .selected {
+	display: block;
+	width: 8px;
+	height: 25px;
+	background-image: url("../../pic/sidebar-menu-arrow.png");
+	float: right;
+	position: absolute;
+	right:0px;
+	top:8px;
+}
+ul.page-sidebar-menu > li > a {
+	display: block;
+	position: relative;
+    margin: 0;
+	border: 0px;
+	padding: 10px 15px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 300;
+}
+ul.page-sidebar-menu > li i {
+	  font-size: 16px;
+	    margin-right: 5px;
+		  text-shadow:none; 
+}
+
+ul.page-sidebar-menu > li.break {
+	  margin-bottom: 20px;
+}
+.page-sidebar .sidebar-collapse{
+	text-align:right;
+	padding-top:7px;
+	padding-right:0px;
+position:relative;
+}
+
+/***Page sidebar***/
+.page-sidebar {  
+	background-color: #eee;
+}
+ul.page-sidebar-menu > li > a {  
+	border-top: 1px solid #ffffff !important;  
+	border-bottom: 1px solid #ffffff !important;
+	color: #3d3d3d !important;
+}
+ul.page-sidebar-menu > li:last-child > a {  
+	border-bottom: 1px solid transparent !important;
+}
+ul.page-sidebar-menu > li a i {  
+	color: #969696;
+}
+ul.page-sidebar-menu > li.open > a,ul.page-sidebar-menu > li > a:hover,ul.page-sidebar-menu > li:hover > a {  
+	background: #ffffff;
+}
+ul.page-sidebar-menu > li.active > a {  
+	background: #428bca !important;  border-top-color: transparent !important;  color: #ffffff;
+}
+ul.page-sidebar-menu > li.active > a i {  
+	color: #ffffff;
+}
+ul.page-sidebar-menu > li > ul.sub-menu > li:first-child > a {  
+	border-top: 0px !important;
+}
+ul.page-sidebar-menu > li > ul.sub-menu > li.active > a,ul.page-sidebar-menu > li > ul.sub-menu > li > a:hover {  
+	color: #ffffff !important;  background: #575757 !important;
+}
+ul.page-sidebar-menu > li > ul.sub-menu > li > a:hover {  
+	background: #575757 !important;
+}
+/* 3rd level sub menu */
+ul.page-sidebar-menu > li > ul.sub-menu li > ul.sub-menu > li.active > a,ul.page-sidebar-menu > li > ul.sub-menu li > ul.sub-menu > li > a:hover,ul.page-sidebar-menu > li > ul.sub-menu li.open > a {  
+	color: #ffffff !important;  background: #575757 !important;
+}
+/* font color for all sub menu links*/
+ul.page-sidebar-menu li > ul.sub-menu > li > a {  color: #bdbdbd;}

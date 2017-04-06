@@ -1,0 +1,161 @@
+<?php
+        $r['topic'] = "diff";
+        $this->beginContent('/layouts/main',array('topic'=>$r));
+?>
+<div class="container">
+<br/>
+<ul class="nav nav-pills">
+  <li class="active"><a href="#">EC产出地址提交</a></li>
+  <li><a href="?r=diff/resultanalysis">结果分析</a></li>
+</ul>
+
+<form id='form'>
+    <div class="page-header"> 
+    <h3 style="font-family:'微软雅黑'"><b>第1步. 填写任务描述和EC版本</b></h3>
+    </div>
+
+<table width="100%">
+<tr>
+	<td width="100%">
+	<div class="input-group">
+	  <span class="input-group-addon">任务描述</span>
+	  <input type="text" class="form-control" id="mission_description" placeholder="任务描述(任务名称)">
+	</div>
+	</td>
+</tr>
+</table>
+</br>
+<table width="100%">
+<tr>
+	<td width="40%">
+	<div class="input-group">
+	  <span class="input-group-addon">新EC版本</span>
+	  <input type="text" class="form-control" id="new_ver" placeholder="新EC版本">
+	</div>
+	</td>
+	<td width="40%">
+	<div class="input-group">
+	  <span class="input-group-addon">旧EC版本</span>
+	  <input type="text" class="form-control" id="old_ver" placeholder="旧EC版本">
+	</div>
+	</td>
+	<td width="20%" align="center">
+	<div>
+	  <font>类型:</font>
+	  <input type="radio" name="ectype" value="chineseec" onclick="radiocheck(this.value)"><font>中文EC</font>
+	  <input type="radio" name="ectype" value="internationalec" onclick="radiocheck(this.value)"><font>国际化EC</font>
+	</div>
+	</td>
+</tr>
+</table>
+<br/>
+    <div class="page-header"> 
+    <h3 style="font-family:'微软雅黑'"><b>第2步. 给出需要分析的新旧EC输出包地址</b></h3>
+    </div>
+<div class="input-group">
+  <span class="input-group-addon">新EC输出包FTP地址:</span>
+  <input type="text" class="form-control" id="new_ftp" placeholder="ftp://">
+</div>
+<br/>
+<div class="input-group">
+  <span class="input-group-addon">旧EC输出包FTP地址:</span>
+  <input type="text" class="form-control" id="old_ftp" placeholder="ftp://">
+</div>
+<br/>
+<hr/>
+<br/>
+      <table width="100%">
+        <tr>
+          <td align="center">
+              <div class='btn-group'>
+    <button class='btn btn-default' id="subtn" style="height:32px;width:200px" type="button" onclick="Submit_Form(0)">提 交 一 下</button>
+              </div>
+          </td>
+        </tr>
+     </table>
+
+</form>
+</div>
+<script>
+var ec_type="null";
+function radiocheck(content)
+{
+	ec_type=content;
+}
+
+function Submit_Form(flag) {
+	
+	var m_description="none";
+	var	newec_ver="none";
+	var oldec_ver="none";
+	var newec_input="none";
+	var oldec_input="none";
+
+	m_description = document.getElementById("mission_description").value;
+	newec_ver = document.getElementById("new_ver").value;
+	oldec_ver = document.getElementById("old_ver").value;
+	newec_input= document.getElementById("new_ftp").value;
+	oldec_input= document.getElementById("old_ftp").value;
+
+	if(m_description=="")
+	{
+		alert("您没有填写任务描述!");
+		return;	
+	}
+	if(newec_ver=="")
+	{
+		alert("您没有填写新EC版本!");
+		return;	
+	}
+	if(oldec_ver=="")
+	{
+		alert("您没有填写旧EC版本!");
+		return;	
+	}
+	if(newec_input=="")
+	{
+		alert("您没有填写新EC输出包的FTP地址!");
+		return;	
+	}
+	if(oldec_input=="")
+	{
+		alert("您没有填写旧EC输出包的FTP地址!");
+		return;
+	}
+	if(ec_type=="null")
+	{
+		alert("您没有选择EC类型!");
+		return;
+	}
+	var fd = new FormData();
+	fd.append("Mission_Description",m_description);
+	fd.append("NewEC_Ver",newec_ver);
+	fd.append("OldEC_Ver",oldec_ver);
+	fd.append("NewEC_input",newec_input);
+	fd.append("OldEC_input",oldec_input);
+	fd.append("EC_Type",ec_type);
+	var xhr = new XMLHttpRequest(); 
+	xhr.addEventListener("load",markComplete,false);
+    xhr.open("POST", "?r=diff/upload");
+    //xhr.open("POST", "?r=diff/testtest");
+	xhr.send(fd);
+	alert("Transmit OK!");	
+}
+
+function markComplete(evt)
+{
+    //alert(evt.target.responseText);
+    var id_num=evt.target.responseText;
+    alert("Diff Mission id:"+id_num);
+    //id_url='?r=diff/resultanalysis';
+    id_url='?r=diff/resultanalysis&diffid='+id_num;
+    window.location.href=id_url;
+}
+
+
+
+
+
+</script>
+
+<?php $this->endContent(); ?>

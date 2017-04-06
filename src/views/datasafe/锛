@@ -1,0 +1,129 @@
+<script src="/static/js/jquery-1.11.1.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<div class="container">
+<div class="row">
+<div class="col-md-10">
+    <div class="head_line">
+        <ul class="breadcrumb">
+            <li><u><a href="?r=dict/index">问题定位</a></u></li>
+            <li>DC词典问题定位</li> 
+            <li class="active">中文词典问题定位</li> 
+        </ul>   
+    </div> 	
+<!--script type="text/javascript" src="static/js/run.js"></script-->
+<script type="text/javascript" src="static/js/bootstrap.js"></script>
+<blockquote class="babel-callout babel-callout-warning">
+  <h4>Not suitable for libraries</h4>
+  <p>
+    The require hook automatically hooks itself into <strong>all</strong> node requires. This will pollute the global scope and introduce conflicts. If you're writing an application, it's completely fine to use. If, however, you're writing a library then you should compile your library and depend on the <a href="/docs/usage/runtime">babel-runtime</a>.
+  </p>
+</blockquote>
+ <div class="panel panel-default">
+	<div class="panel-heading">条件输入</div>
+<table class="table table-bordered" style="text-align:left;font-size:14px">
+<body>
+	<tr> 
+		<td style="width:90%">
+			&nbsp;<input type="radio" name="ecrunposition" id= "ecrunposition0" value="default" checked  onclick="ecruncheck(this.value)"  onchange="changeValue();">
+            <font>URL</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ecrunposition" id="ecrunposition1" value="outside" onclick="ecruncheck(this.value)"  onchange="changeValue();">
+            <font>File</font>
+			<br/>
+			<br/>
+			<table rules=none id="table_machine_url" style="width:800px;display:'true';font-size:14px; color:#333333">
+				<body>
+					<tr>
+						<td>URL</td>
+						<td style="width:80%;">
+							<input id='url' type="text" style="width: 600px;height:30px;margin-left:-80px;border-bottom:2px solid #a9c6c9;"  placeholder='www.ngbbs.cn/thread-999915-1-8.html'><code>去掉http://</code>
+						</td>
+					</tr>
+					<tr>
+						<td>删除原因</td>
+						<td style="width:80%;">
+							<input id='del_reason' style="width: 60px;height:30px;margin-left:-80px;border-bottom:2px solid #a9c6c9;"  placeholder='6'><code>请填写del_reason值</code>
+						</td>
+					</tr>
+				</body>
+			</table>
+			<table rules=none id="table_machine_file" style="width:800px;display:none;font-size:14px; color:#333333">
+				<body>
+					<tr>
+						<td>输入数据路径</td>
+						<td style="width:80%;">
+							<input id='path' style="width: 80%;height:30px;margin-left:-60px;border-bottom:2px solid #a9c6c9;"  placeholder='数据来源要求ftp路径，需要加上ftp://'><code>文件格式:url\tdel_reason</code>
+						</td>
+					</tr>
+				</body>
+			</table>
+		</td>	
+	</tr>
+</body>
+</table>
+<h4 class="text-success"><button type="button" class="btn btn-primary" style="color: black;background-color: rgba(255, 255, 240, 0.05);margin-left: 400px;margin-top: 20px;" id="subtn" onclick="Submit_Form(2)">提交</button></h4>
+</div>
+<table id="local_task" class="table table-bordered table-striped table-hover" width="100%" style="text-align:
+left;font-size:12px;" > 
+                <thead> 
+                <tr style="word-break:break-all;background-color:#d9edf7">
+                    <th width="5%">URL</th>
+                    <th width="5%">Dict</th> 
+                    <th width="10%">Action</th> 
+                    <th width="10%">Rule</th> 
+                    <!--th>词典版本</th--> 
+                    <th width="5%">Site</th> 
+                    <!--th width="15%">升级点</th--> 
+                    <!--th width="15%">测试类型</th--> 
+                    <th width="10%">Replaced_url</th> 
+                    <th width="10%">No.</th> 
+                    <th width="15%">Replace</th> 
+                    <th width="15%">操作</th> 
+                    <th width="15%">部署效果</th> 
+                </tr>   
+                </thead>
+                <tbody style="font-size:12px">
+                 <tr>
+                 </tr>
+                </tbody>
+                </table>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+function changeValue(){
+var check0 = document.getElementById("ecrunposition0").checked;
+var check1 = document.getElementById("ecrunposition1").checked;
+alert(check0);
+
+if(check1)
+{
+    document.getElementById('table_machine_url').style.display='none'
+    document.getElementById('table_machine_file').style.display=''
+}
+if(check0)
+{
+    document.getElementById('table_machine_file').style.display='none'
+    document.getElementById('table_machine_url').style.display=''
+}
+}
+$(document).ready(function(){
+        /* setup navigation, content boxes, etc... */
+        Administry.setup();
+        $('#subtn').click(function() {
+            var check0 = document.getElementById("ecrunposition0").checked;
+            var check1 = document.getElementById("ecrunposition1").checked;
+            if(check0)
+            {
+                var del_reason = parseInt($('#del_reason').val());
+                if(isNaN(del_reason) || del_reason <= 0) {
+                alert("请输入一个正整数");
+                return;
+            }else if(check1)
+            {
+                alert(document.getElementById("path").value)
+            }
+        }
+        window.location.href="index.php?r=system/urlsubmitcount&day=" + days;
+        });
+</script>

@@ -1,0 +1,33 @@
+#!/bin/bash
+NOAH_PATH="/home/work/platform_dc/noah"
+STATUS_FILE="noah"
+FLAG=$1
+TASK_ID=$2
+INSTANCEID=$3
+STATUS_FILE="noah_${TASK_ID}"
+if [ ${FLAG} == "noahid" ]
+then
+    while [ 1 ]
+    do
+        if [ ! -s /home/work/noah.txt ]
+        then
+            sleep 10
+	    else
+            echo "noah.txt return sucess"
+		    exit
+        fi
+    done
+elif [ $FLAG == "noahstatus" ]
+then
+    curl "http://noah.baidu.com/datadist/Api/GetInstanceDetail?instanceId=${INSTANCEID}" >${NOAH_PATH}/${STATUS_FILE}
+	STATUS=`less ${NOAH_PATH}/${STATUS_FILE} | awk -F ':' '{print $2}' |awk -F ',' '{print $1}'`
+	if [ ${STATUS}"x" == "truex" ]
+	then
+	    echo 0
+		exit 0
+	else
+	    echo 1
+	    exit 1
+	fi
+fi
+	

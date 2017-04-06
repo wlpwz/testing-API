@@ -1,0 +1,70 @@
+svg{
+	width:1000px;
+	height:1000px;
+}
+
+.node rect {
+    stroke: #333;
+    stroke-width: 1.5px;
+    fill: #fff;
+
+    cursor: pointer;
+}
+
+.node text {
+    cursor: pointer;
+    fill: black;
+}
+
+.node.sick rect {
+    fill: #428bca;
+    stroke: #eee;;
+}
+
+.node.normal rect {
+    fill: #eee;
+    stroke: #eee;;
+}
+
+.node.healthy rect {
+    fill: #ffffff;
+    stroke: #eee;
+}
+
+.edgeLabel rect {
+    fill: #fff;
+}
+
+.edgePath path {
+    stroke: #333;
+    stroke-width: 3px;
+    fill: none;
+    cursor: pointer;
+}
+
+.edgePath.sick path {
+    stroke: rgb(150, 0, 0);
+}
+.edgePath.normal path {
+    stroke: #428bca;
+}
+.edgePath.healthy path {
+    stroke: green;
+}
+
+.graph-tooltip {
+    border-radius: 4px;
+    background-color: rgba(123, 123, 229, 0.8);
+    border: 2px solid rgb(131, 131, 194);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+
+    position: absolute;
+    display: none;
+
+    font-size: 12px;
+
+    -webkit-transition: left 0.2s ease-out, top 0.2s ease-out;
+
+    z-index: 1000;
+}

@@ -1,0 +1,34 @@
+
+table.altrowstable {
+    font-family: '微软雅黑';
+	
+    font-size:13px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #a9c6c9;
+    border-collapse: collapse;
+    margin-left:40px;
+    margin-top:20px;
+    width:1000px; 
+}
+table.altrowstable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+}
+table.altrowstable td {
+    border-width: 2px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+    margin-left:20px;
+}
+.oddrowcolor{
+    background-color:#d4e3e5;
+}
+.evenrowcolor{
+    background-color:#c3dde0;
+}
+
+

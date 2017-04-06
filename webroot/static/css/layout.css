@@ -1,0 +1,96 @@
+.dl-group{
+	font-size: 14px;
+  border: 1px solid #DDD;
+  border-top: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.dd-group-item{
+	padding: 5px 5px 5px 14px;
+	background-color: #FFF;
+}
+.dd-active{
+	border-left: 4px solid #94C564;
+	background: #EEE;
+}
+.dt-group-title{
+	border-bottom: 1px solid #DDD;
+	background-color: #F5F5F5;
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+}
+.top-border{
+	border-top: 1px solid #DDD;
+}
+.inline{
+	display:inline-block;
+}
+.mylink{
+	color: #3A87AD;
+}
+.badge-green{
+	background: #2ECC71;
+}
+
+.in-col-def2,.in-col-def1{
+  display: inline-block;
+}
+.in-col-def2{
+  width: 176px;
+}
+.in-col-def1{
+  width: 138px;
+}
+/* Boxes
+      ---------------------------------------------------------------------*/
+.box {
+    padding: 8px;
+	margin-bottom:8px;
+	color:#555;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+    background:#eee;
+}
+.box-info {
+	padding-left: 32px;
+	border-top:1px solid #B8E2FB;
+	border-bottom:1px solid #B8E2FB;
+	background:#E8F6FF url("../images/information.png") no-repeat 8px 50%;
+}
+.box-warning{
+    padding-left: 32px;
+	border-top:1px solid #F2DD8C;
+	border-bottom:1px solid #F2DD8C;
+	background:#FFF5CC url("../images/error.png") no-repeat 8px 50%;
+}
+.box-error{
+    padding-left: 32px;
+	border-top:1px solid #F8ACAC;
+	border-bottom:1px solid #F8ACAC;
+	background:#FFD1D1 url("../images/exclamation.png") no-repeat 8px 50%;
+}
+.box-error-msg{
+	margin-top:-8px;
+	background:#FFF1F1;
+	border-top:0 none;
+	border-bottom:1px solid #FDDCDC;
+	color:#664B4B;
+	padding:12px;
+}
+.box-error-msg ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.box-success{
+	padding-left: 32px;
+	border-top:1px solid #BBDF8D;
+	border-bottom:1px solid #BBDF8D;
+	background:#EAF7D9 url("../images/accept.png") no-repeat 8px 50%;
+}
+.box a:hover {
+	background: transparent !important;
+}
+

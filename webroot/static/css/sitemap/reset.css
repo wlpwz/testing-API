@@ -1,0 +1,65 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+ol,ul {
+    list-style: none;
+}
+caption,th {
+    text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym {border: 0;}
+.clearfix:after{
+     content:"."; display:block; height:0; clear:both; visibility:hidden;
+}
+.clearfix{display:inline-block;}
+/* hides from IE-mac \*/
+html .clearfix{iheight:1%;}
+.clearfix{display:block;}
+/* End hide from IE-mac */
+
+
+
+/* 不需要reset的样式*/
+.noreset em,.noreset address,.noreset cite{font-style:italic;}
+.noreset strong{font-weight:bolder;}
+.noreset em strong,.noreset strong em{font-weight:bolder; font-style:italic;}
+.noreset b{font-weight:bolder;}
+.noreset ul{list-style-type:disc;}
+.noreset ol{list-style-type:decimal;}
+.noreset ul,.noreset ol,noreset li{padding-left:30px;}
+.noreset h1,
+.noreset h2,
+.noreset h3,
+.noreset h4,
+.noreset h5,
+.noreset h6{
+    font-weight:bold;
+    margin:18px 0;
+}
+.noreset h1{line-height:38px;font-size:32px;}
+.noreset h2{line-height:27px;font-size:24px;}
+.noreset h3{line-height:22px;font-size:18px;}
+.noreset h4{line-height:18px;font-size:16px;}
+.noreset h5{line-height:15px;font-size:13px;}
+.noreset h6{line-height:13px;font-size:10px;}
+.noreset p{margin:16px 0;}
+.noreset fieldset{border:1px solid #bbb; padding:0 5px;}

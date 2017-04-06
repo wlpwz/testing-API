@@ -1,0 +1,59 @@
+[TYPE]
+text:文本
+number:数字
+integer:整数
+percentnumber:百分数
+bool:布尔值
+url:URL
+enum:枚举值
+site:站点
+domain:主域
+integerenum:整数枚举
+sex:性别
+cnp:中国省份
+age:年龄
+cnn:中文姓名
+phone:电话
+imageurl:图片url
+address:地址
+cnc:城市
+time:时间
+hpl:医院等级
+duration:持续时间
+None:无
+
+[RESULT]
+fail:错误
+success:成功
+null:空值
+warning:疑似错误
+pass:正确
+
+[INFO]
+min_length:最小长度
+max_length:最大长度
+min_num:最小值
+max_num:最大值
+avg_num:平均值
+diff_num:枚举值数量
+dead_url:死链(建设中)
+url_num:合法
+error_url:错误
+
+[STRING]
+ok:我是通用多语言字符串OK
+
+[RC]
+success:0
+error_blank:-1
+error_db:-2
+error_service_type:-11
+error_input:-3
+
+[MESSAGE]
+success: Good Work, Operatie successfully!
+error_blank: Bad news, error due to blank data !
+error_db: Bad news, error when db operation, please contact system administrator: yanqinghong !
+error_service_type: Bad news, error when generate service type according to controller and action, and no such service in db, please contact system administrator: yanqinghong !
+error_input: input is invalid!
+

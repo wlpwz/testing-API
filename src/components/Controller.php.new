@@ -1,0 +1,103 @@
+<?php
+
+require_once 'WordTransferUtil.php';
+
+/**
+ * Controller is the customized base controller class.
+ * All controller classes for this application should extend from this base class.
+ */
+
+class Controller extends CController
+{
+	 
+	/**
+	 * @var string the default layout for the controller view. Defaults to '//layouts/column1',
+	 * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
+	 */
+	public $layout='//layouts/column1';
+	/**
+	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
+	 */
+	
+	//public $menu=array();
+	/**
+	 * @var array the breadcrumbs of the current page. The value of this property will
+	 * be assigned to {@link CBreadcrumbs::links}. Please refer to {@link CBreadcrumbs::links}
+	 * for more details on how to specify this property.
+	 */
+	//public $breadcrumbs=array();
+
+	public $needLogin = true ;
+	public $defaultFilters = array( 'login' ); 
+	public $request ;
+	public $blank_result=array("rc"=>-1,"message"=>"input is blank","result"=>"");
+	
+	//public $online = TRUE;
+	
+	function __construct($id, $module=NULL) {
+	    parent::__construct($id, $module);
+	}
+	// below is from tpl2 project to pass the cas, work now 
+	public function filters(){
+		$filters = $this->addFilters() ;
+		return array_merge( $this->defaultFilters , $filters );
+	}
+	public function filterLogin( $filterChain ){
+		if( $this->needLogin  ){
+			Yii::app()->user->login();
+		//	phpCAS::forceAuthentication();
+		}
+		$filterChain->run();
+	}
+	public function addFilters(){
+		return array() ;
+	}
+
+	public function beforeAction( $action ){
+		$this->request = Yii::app()->request ;
+		return true ;
+	}
+
+	// below is for  business part, to generate the result json to the view part
+
+	public function getJsonServiceTypeError($custom_message=""){
+		$result["rc"]=s("error_service_type",SECTION_RC);
+		$result["result"]="";
+		$result["message"]=s("error_service_type",SECTION_MESSAGE)." ".$custom_message;
+		return $result;
+	}
+
+	public function getJsonBlankDataError($custom_message=""){
+		$result["rc"]=s("error_blank",SECTION_RC);
+		$result["result"]="";
+		$result["message"]=s("error_blank",SECTION_MESSAGE)." ".$custom_message;
+		return $result;
+	}
+
+	public function getJsonInvilidInputError($custom_message=""){
+		$result["rc"]=s("error_input",SECTION_RC);
+		$result["result"]="";
+		$result["message"]=s("error_input",SECTION_MESSAGE)." ".$custom_message;
+		return $result;
+	}
+
+	public function getJsonDBError($custom_message=""){
+		$result["rc"]=s("error_db",SECTION_RC);
+		$result["result"]="";
+		$result["message"]=s("error_db",SECTION_MESSAGE)." ".$custom_message;
+		return $result;
+	} 
+
+	public function getJsonSuccess($custom_result="",$custom_message="",$custom_attributes=array()){
+		$temp_result["rc"]=s("success",SECTION_RC);
+		$temp_result["result"]=$custom_result;
+		// $result["message"]=s("success",SECTION_MESSAGE)." ".$custom_message;
+		$result=array_merge($temp_result,$custom_attributes);
+		return $result;
+	} 
+
+	//  below is for  business part, for api, generate user due to id
+	public function getAPIUserByID($id){
+		return "api_".$id."_user";
+	}
+}

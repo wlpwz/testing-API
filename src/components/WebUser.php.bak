@@ -1,0 +1,80 @@
+<?php
+class WebUser extends CWebUser{
+    public $SSODomain = '';     //sso domain
+    private $isAuthenticated = false ;
+    public $redirectUrl = '';
+    public $allowAutoLogin=false;
+        
+    public $SSOPort = '';       //sso port
+    public $handleLogout ='';
+    public function __construct(){
+        // $this->onInit = array( 'Universal' , 'beforeInit' ) ;
+    }
+    public function onInit( $event ){
+        $this->raiseEvent('onInit' , $event );
+    }
+    public function init(){
+        if( $this->hasEventHandler('onInit') ){
+            $this->onInit( new CEvent( $this) );
+        }
+        Yii::app()->getSession()->open();
+        $this->redirectUrl = Yii::app()->request->hostInfo . Yii::app()->homeUrl ;
+        $this->setStateKeyPrefix('mfuser_');
+		$string=Yii::getPathOfAlias('application.extensions.CAS.CAS');
+        require_once($string.'.php');
+        // $CASPath = Yii::getPathOfAlias( 'phpcas.CAS');
+        // require_once($CASPath.'.php');
+       // Yii::registerAutoloader('CAS_autoload');
+        //phpCAS::setDebug();
+        // phpCAS::client(CAS_VERSION_2_0,$this->SSODomain, (int) $this->SSOPort ,'');
+        //phpCAS::handleLogoutRequests(false);
+        //phpCAS::handleLogoutRequests(true, $this->handleLogout);
+        //phpCAS::setNoCasServerValidation();
+    }
+    public function setEmail( $email ){
+        $this->setState( '__email' , $email );
+    }
+    public function getEmail(){
+        return $this->getState('__email');
+    }
+
+    public function login( $identity = null , $duration = 0 ){
+        $this->isAuthenticated=phpCAS::isAuthenticated();
+        if($this->isAuthenticated){
+            $username=phpCAS::getUser();
+            $this->setEmail( $username.'@baidu.com');
+            if( empty( $this->username ) ){
+                $this->restoreFromCookie();
+            }
+        }else{
+            $this->forceLogin();
+        }
+    }
+    public function getIsGuest(){
+        return !$this->isAuthenticated;
+    }
+    protected function restoreFromCookie(){ //autologin
+        $username=phpCAS::getUser();
+        $states=array();
+        if($this->beforeLogin($username,$states,true))
+        {
+            $this->changeIdentity($this->id,$username,$states);
+            $this->afterLogin(true);
+        }
+    }
+    /*
+       by Joe: 重写此部分避免重新生成session，因为该session_id被uuap记住，不能重写
+     */
+    protected function changeIdentity($id,$name,$states){
+        $this->setId($id);      
+        $this->setName($name);      
+        $this->loadIdentityStates($states);
+    }
+    public function forceLogin(){
+        phpCAS::forceAuthentication();
+    }
+    public function logout( $destroySession = true ){
+        //phpCAS::logout();
+        phpCAS::logoutWithRedirectService($this->redirectUrl);
+    }
+}

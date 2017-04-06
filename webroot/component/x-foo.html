@@ -1,0 +1,14 @@
+<clouda-component name="x-foo" attributes="attr">
+    <template>
+        <input name="attr" value="{{attr}}" id="input"/>
+        <p>{{attr}}</p>
+    </template>
+    <script>
+        cloudaui({
+            attr: 'testName',           
+            attrChanged : function(val){
+                console.log("attr change!",val);
+            }
+        });
+    </script>
+</clouda-component> 

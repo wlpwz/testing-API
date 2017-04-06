@@ -1,0 +1,23 @@
+#### config _fun 用于指定配置文件用于输出还是输入。
+### in 数据读入（反序列化），out 数据输出（序列化）
+config_fun : 0
+
+### 总体数据的version。不配置 不会检查
+total_cur_version :  10
+### 各个子策略的版本存储的顺序 各个feature的顺序必须和下面的feature list顺序一致######
+version_list  : feature1+feature2
+### version_cnt 用于初始化内存中的数据结构，并指定从同一的version数组中读取
+version_cnt  : 2
+### 各个子策略的版本对比，即当前程序中改策略的版本 ####
+feature1  : 13
+
+#### feature2 在当前程序的版本是10，如果数据中的版本与12不同，版本check失败 ####
+feature2  : 12
+
+### 其他stra的配置一致
+
+###max_tpm_buf ：  序列化、反序列化使用的内部buf的的大小 不配做默认为 4k
+###                这个buf的主要用于建立索引等。
+
+###max_unzip_buf :  工具内部会对压缩数据按照合理的算法解压，解压的时候使用的buff
+###                不指定的情况下默认为 100K。

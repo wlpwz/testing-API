@@ -1,0 +1,91 @@
+<clouda-component name="handa-header" attributes="logo title naviList naviColumn">
+<template>
+    <style>
+    </style>
+    <div class="hHeader">
+        <div class="hFlexBox">
+            <div class="hHeaderBtn homeBtn tap" data-action="goHome">
+                <span><i class="fa fa-home"></i></span>
+            </div>
+            <div class="hHeaderBtn goBackBtn tap hHide" data-action="goBack">
+                <span class="icon leftArrow"></span>
+            </div>
+            <div class="hHeaderTitle hFlex1">
+                <h1 class="hOmit">{{title}}</h1>
+            </div>
+            <div class="hHeaderBtn navi tap" data-action="toggleNavi">
+                <span><i class="fa fa-bars"></i></span>
+            </div>
+        </div>
+    </div>
+    <ul id="globalNavi" class="hNavi" data-col="{{naviColumn}}">
+    </ul>
+</template>
+<script>
+// TODO: clouda-if的bug：
+// 1. clouda-if标签内的{{logo}}和{{this.logo}}都不输出值
+// 2. chouda-if输出的标签中有id="container", 可能在业务中有id冲突
+// 3. 多余的嵌套
+// TODO: clouda-each的bug：
+// 1. 多余的嵌套破坏了所有的父子关系，如ul>li的父子关系，从而导致样式被破坏（取决于是否用">"）
+// TODO: created 和 ready 的区别？
+cloudaui([
+// '/clouda-ui/component/manufacturer/src/clouda-if/clouda-if.html'
+], {
+    logo : '',
+    logoChanged : function (data) {
+    },
+    title:'',
+    titleChanged : function (data) {
+    },
+    naviColumn : '',
+    naviColumnChanged : function (data) {
+        var t = this;
+        t.navi && t.navi.hide();
+    },
+    naviList : [],
+    naviListChanged : function (data) {
+        var t = this;
+        document.getElementById('globalNavi').innerHTML = t.naviItemTpl({list : data });
+    },
+    naviItemTpl : handa.template('<% var item; for (var i=0, l=list.length; i<l; i++) { item = list[i]; %>'+
+    '<li class="hNaviItem">'+
+    '<span class="tap hOmit" data-url="<%=item.url%>"><%=item.text%></span>'+
+    '</li>'+
+    '<% } %>'),
+    created : function(el){
+    // console.log('created', el.innerHTML);
+    	    this.naviColumnChanged(this.naviColumn);
+     this.naviListChanged(this.naviList);
+    	
+    },
+    ready:function(el){
+        // console.log('ready', el.innerHTML);
+        var t = this;
+
+        t.navi = new handa.Layer({
+            content       : '#globalNavi',
+            top           : 43,
+            right         : 0,
+            left          : 0,
+            maxHeight     : '50%',
+            zIndex        : 9,
+            iscroll       : true,
+            mask          : true,
+            maskAction    : 'hideNavi',
+            showAnimation : 'hSlideDownIn',
+            hideAnimation : 'hSlideUpOut'
+        });
+
+        handa.tap.on({
+            toggleNavi : function () {
+                t.navi.toggle();
+            },
+            hideNavi : function () {
+                t.navi.hide();
+            }
+        });
+    }
+});
+</script>
+</clouda-component>

@@ -1,0 +1,24 @@
+#pagevalue.config
+[TESTLOG]
+	log_path : ../log/
+	log_file : getpv.
+	log_stat : 4
+[PVLOG]
+	logconfpath : ../conf/ec_core/page-value-conf/
+	logconffile : pvlog.conf
+[PVM]
+	pvminingfilepath : ../pvmininginfo/
+	pvminingfilenameprefix : pvinfo		
+$include : "strategy.config"
+$include : "calculater.config"
+$include : "dict.config"
+[FEATURESET]
+	FEATURESET_SIZE : 4096
+	SERIA_IN_CONFIG_PATH : ../conf/ec_core/page-value-conf/
+	SERIA_IN_CONFIG_FILE : seria_in_config
+	SERIA_OUT_CONFIG_PATH : ../conf/ec_core/page-value-conf/
+	SERIA_OUT_CONFIG_FILE : seria_out_config
+	FETURE_CONFIG_FILE_NAME : ../conf/ec_core/page-value-conf/feature.conf
+
+[CCODE]
+	code_path : ../conf/ec_core/page-value-dict/

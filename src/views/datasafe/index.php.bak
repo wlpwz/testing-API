@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-cn" style="height:100%">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" href="static/css/layout.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="static/css/header.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/7.3/styles/github.min.css"></link>
+        <link rel="stylesheet" href="static/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="static/css/doc.css"></link>
+        <link rel="stylesheet" href="static/css/mybase.css"></link>
+        <!--script src="/static/js/jquery.min.js"></script-->
+        <link href="static/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <script src="/static/js/jquery-1.11.1.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <!--script src="static/js/jquery.js"></script>
+        <script src="static/js/bootstrap.js"></script>
+        <script src="static/js/holder.js"></script-->
+
+        <title>PAT 测试服务化平台</title>
+        <link rel="shortcut icon" type="image/x-icon" href="pic/pat.png">
+
+        <!-- Custom styles for this template -->
+        <link href="static/css/carousel.css" rel="stylesheet">
+        <style type="text/css" id="holderjs-style"></style>
+    </head>
+<body class="home-template">
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand hidden-sm" href="http://data-safe.baidu.com/" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'navbar-首页'])">DataSafe</a>
+        </div>
+        <div class="navbar-collapse collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a id="btn-jike-video" href="http://cq01-testing-ps7109.vm.baidu.com:8911/?r=datasafe/index" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', '统一回灌接口问题追查'])">统一回灌接口问题追查</a></li>
+            <li><a href="#" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'less'])">统一回灌数据状态查询</a></li>
+            <li><a href="#" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'jquery'])">统一回灌LB|BL查询</a></li>
+            <li><a href="#" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'expo'])">统一回灌wiki</a></li>
+            <li><a href="http://cq01-testing-ps7109.vm.baidu.com:8911/?r=requirement/list" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'jquery'])">需求管理</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right hidden-sm">
+            <li><a href="/about/" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'about'])">关于</a></li>
+          </ul>
+        </div>
+      </div>
+</div>
+<div class="jumbotron masthead"></div>
+<div class="container projects">
+<div class="row">
+<div class="col-md-10">
+<script type="text/javascript" src="static/js/run.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.js"></script>
+<!--blockquote class="babel-callout babel-callout-warning"-->
+<div class="bs-callout bs-callout-info" id="callout-type-dl-truncate">
+  <h4>名词解释</h4>
+  <ol>
+   <li><strong>action</strong>(词典行为):URL在DC中命中该词典后的行为</li>
+   <li><strong>replaced_url</strong> :最终的url</li>
+   <li><strong>No.</strong>(命中信息序号)：是代表命中了几条规则的，一条url可能名命中多条词典，计数从0开始。例如0代表命中了一条。
+</li>
+   <li><strong>replace</strong>:命中的站点明文</li>
+   <li><strong>rule</strong>:命中的规则明文</li>
+   <li><strong>site</strong>:命中的操作明文</li>
+   <li>其他：<a href="http://wiki.baidu.com/pages/viewpage.action?pageId=63552644">DC删除对照关系</a></li>
+  </ol>
+</div>
+<!--/blockquote-->
+ <div class="panel panel-default">
+	<div class="panel-heading">条件输入</div>
+<table class="table table-bordered" style="text-align:left;font-size:14px">
+<body>
+	<tr> 
+		<td style="width:90%">
+			&nbsp;<input type="radio" name="ecrunposition" id= "ecrunposition0" value="default" checked  onclick="ecruncheck(this.value)"  onchange="changeValue();">
+            <font>URL</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ecrunposition" id="ecrunposition1" value="outside" onclick="ecruncheck(this.value)"  onchange="changeValue();">
+            <font>File</font>
+			<br/>
+			<br/>
+			<table rules=none id="table_machine_url" style="width:800px;display:'true';font-size:14px; color:#333333">
+				<body>
+					<tr>
+						<td>URL</td>
+						<td style="width:80%;">
+							<input id='url' type="text" style="width: 600px;height:30px;margin-left:-80px;border-bottom:2px solid #a9c6c9;"  placeholder='www.ngbbs.cn/thread-999915-1-8.html'><code>去掉http://</code>
+						</td>
+					</tr>
+					<tr>
+						<td>删除原因</td>
+						<td style="width:80%;">
+							<input id='del_reason' style="width: 60px;height:30px;margin-left:-80px;border-bottom:2px solid #a9c6c9;"  placeholder='30'><code>请填写del_reason值</code>
+						</td>
+					</tr>
+				</body>
+			</table>
+			<table rules=none id="table_machine_file" style="width:800px;display:none;font-size:14px; color:#333333">
+				<body>
+					<tr>
+						<td>输入数据路径</td>
+						<td style="width:80%;">
+							<input id='path' style="width: 80%;height:30px;margin-left:-60px;border-bottom:2px solid #a9c6c9;"  placeholder='数据来源要求ftp路径，需要加上ftp://'><code>文件格式:url\tdel_reason</code>
+						</td>
+					</tr>
+				</body>
+			</table>
+		</td>	
+	</tr>
+</body>
+</table>
+<h4 class="text-success"><button type="button" class="btn btn-primary" style="color: black;background-color: rgba(255, 255, 240, 0.05);margin-left: 400px;margin-top: 20px;" id="subtn">提交</button></h4>
+</div>
+<h6><font color="#990033"><strong>只有命中词典才会在下面列表展现</strong></font></h6>
+<table id="local_task" class="table table-bordered table-striped table-hover" width="100%" style="text-align:left;font-size:12px;"> 
+                <thead> 
+                <tr style="background-color:#d9edf7">
+                    <th width="10%x">URL</th>
+                    <th width="5%">Dict</th> 
+                    <th width="10%">Action</th> 
+                    <th width="10%">Replaced_url</th> 
+                    <th width="5%">No.</th> 
+                    <th width="10%">Replace</th> 
+                    <th width="10%">Rule</th> 
+                    <th width="10%">site</th> 
+                    <!--th width="10%">操作</th--> 
+                </tr>   
+                </thead>
+                <tbody style="font-size:12px">
+                <?php
+                  if(isset($dictproblem)) {
+                    foreach($dictproblem as $item) {
+                      if(trim($item[url]) == "") { continue; }
+                      echo "<tr>";
+                      echo "<td>" . $item["url"] . "</td>";
+                      echo "<td>" . $item["dict"] . "</td>";
+                      echo "<td>" . $item["action"] . "</td>";
+                      echo "<td>" . $item["replaced_url"] . "</td>";
+                      echo "<td>" . $item["no"] . "</td>";
+                      echo "<td>" . $item["replace"] . "</td>";
+                      echo "<td>" . $item["rule"] . "</td>";
+                      echo "<td>" . $item["site"] . "</td>";
+                     /* echo "<td>" . "<a href = '?r=system/showerror&uid=" . $item["ui
+d"] . "&sid=" . $item["sid"]."' target = '_blank'>详情</a>"."</td>";*/
+                      echo "</tr>";
+                    }
+                  }
+                ?>
+                </tbody>
+                </table>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+function changeValue(){
+    var check0 = document.getElementById("ecrunposition0").checked;
+    var check1 = document.getElementById("ecrunposition1").checked;
+
+    if(check1)
+    {
+        document.getElementById('table_machine_url').style.display='none'
+        document.getElementById('table_machine_file').style.display=''
+    }
+    if(check0)
+    {
+        document.getElementById('table_machine_file').style.display='none'
+        document.getElementById('table_machine_url').style.display=''
+    }
+};
+$('#subtn').click(function() {
+    var check0 = document.getElementById("ecrunposition0").checked;
+    var check1 = document.getElementById("ecrunposition1").checked;
+    if(check0)
+    {
+        var del_reason = parseInt($('#del_reason').val());
+        var url = $('#url').val();
+        if(isNaN(del_reason) || del_reason <= 0) 
+        {
+            alert("请输入一个正整数");
+            return;
+        }
+        window.location.href="index.php?r=dict/submit&url=" + url + "&del_reason=" + del_reason + "&flag=1";
+    }else if(check1)
+    {
+            var path = document.getElementById("path").value;
+            var path_index = path.indexOf("ftp://");
+            if(path_index != 0)
+            {
+                alert("请输入正确的ftp地址");
+                return;
+            }
+            window.location.href="index.php?r=dict/submit&url=" + path + "&del_reason=0" + "&flag=2";
+    }
+});
+</script>

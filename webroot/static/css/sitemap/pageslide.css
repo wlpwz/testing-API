@@ -1,0 +1,29 @@
+.pageNum
+	{
+		list-style : none;	
+	}
+	.pageNum li
+	{
+		width : 60px;
+		float : left;
+	}
+	.pageNum li.num
+	{
+		width : 50px;
+		float : left;
+		border : 1px solid #D1EEEE;
+		text-align : center;
+	}
+	.pageNum li.num.active
+	{
+		background-color : #FFEEFF;
+	}
+	.pageNum li a
+	{
+		text-decoration : none;
+	}
+	.slidePage
+	{
+		float: right;	
+	}
+

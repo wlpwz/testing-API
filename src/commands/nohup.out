@@ -1,0 +1,180 @@
++ hostname=spider@cq01-spi-pocket14.cq01.baidu.com
++ password=spider
++ pid=25847
++ task_id=12
++ ec_type=ec1
++ mkdir -p /home/work/LibPP/EC_MONITOR/12
++ sleep 5
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     6  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     6
++ result='15579 5649'
++ '[' x15579 5649 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15579 5649
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     9
++ result='15579 5649'
++ '[' x15579 5649 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15579 5649
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      5      0 --:--:--  0:00:02 --:--:--     9
++ result='15578 5648'
++ '[' x15578 5648 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15578 5648
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     9
++ result='15579 5649'
++ '[' x15579 5649 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15579 5649
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      5      0 --:--:--  0:00:02 --:--:--     9
++ result='15578 5648'
++ '[' x15578 5648 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15578 5648
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      5      0 --:--:--  0:00:02 --:--:--     9  0    11    0    11    0     0      5      0 --:--:--  0:00:02 --:--:--     9
++ result='15581 5650'
++ '[' x15581 5650 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15581 5650
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     9
++ result='15578 5648'
++ '[' x15578 5648 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15578 5648
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     9
++ result='15578 5648'
++ '[' x15578 5648 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15578 5648
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     8
++ result='15582 5653'
++ '[' x15582 5653 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15582 5653
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     8  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     8
++ result='15580 5650'
++ '[' x15580 5650 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15580 5650
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     9
++ result='15578 5648'
++ '[' x15578 5648 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15578 5648
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     9
++ result='15579 5649'
++ '[' x15579 5649 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15579 5649
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     9
++ result='15578 5648'
++ '[' x15578 5648 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15578 5648
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     9
++ result='15578 5648'
++ '[' x15578 5648 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15578 5648
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     8  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     8
++ result='15578 5648'
++ '[' x15578 5648 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15578 5648
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      5      0 --:--:--  0:00:02 --:--:--     9
++ result='15578 5648'
++ '[' x15578 5648 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15578 5648
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     9
++ result='15578 5648'
++ '[' x15578 5648 = x ']'
+mem_check.sh: line 18: [: too many arguments
++ echo 15578 5648
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=25847'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0    11    0    11    0     0      4      0 --:--:--  0:00:02 --:--:--     8
++ hostname=spider@cq01-spi-pocket14.cq01.baidu.com
++ password=spider
++ pid=sfdsfsd
++ task_id=12
++ ec_type=ec1
++ mkdir -p /home/work/LibPP/EC_MONITOR/12
++ sleep 5
++ '[' 1 ']'
+++ curl 'http://cq01-testing-ps7161.cq01.baidu.com:8911/?r=ecTask/memoryMonitorAPI&hostname=spider@cq01-spi-pocket14.cq01.baidu.com&password=spider&pid=sfdsfsd'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
++ result=
++ '[' x = x ']'
++ break

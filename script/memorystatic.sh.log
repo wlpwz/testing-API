@@ -1,0 +1,4 @@
+/home/work/ec_test_service/script/memorystatic.sh: option requires an argument -- i
+[FATAL] do not support such parameter
+Usage: /home/work/ec_test_service/script/memorystatic.sh  -i <memory_ftp>  [-h]
+Ex: /home/work/ec_test_service/script/memorystatic.sh -i ftp://cq01-testing-ps7121.vm.baidu.com:/home/spider/wget_liupan/memory_record.sh 

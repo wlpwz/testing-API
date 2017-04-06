@@ -1,0 +1,61 @@
+<?php
+        $r['topic'] = "search";
+        $this->beginContent('/layouts/1',array('topic'=>$r));
+?>
+<div class="container" id="main_view">
+	<div align="center" id="DIV" value=0>
+	<button  class="btn btn-primary" onclick="prev()">上一个</button>
+	<button  class="btn btn-primary" onclick="next()">下一个</button>
+	</div>
+<br/>
+<script>
+	var iframe = document.createElement("iframe");
+	var node = document.getElementById("main_view");
+	node.appendChild(iframe);
+	iframe.setAttribute("width","150%");
+	iframe.setAttribute("height","1000");
+	var node1 = document.getElementById("DIV");
+	var index = node1.getAttribute("value");
+	iframe.setAttribute("src","http://cp01-testing-ps6076.cp01.baidu.com:8900/lumia.html");
+	iframe.setAttribute("id","iframe");
+	function next()
+	{
+		var array = new Array();
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/lumia.html");
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/nokia_output.html")
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/movie_output.html");
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/world_cup_output.html");
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/qq_output.html");
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/old_boy_output.html");
+		var index = parseInt(document.getElementById("DIV").getAttribute("value")) + 1;
+		if (index >= array.length)
+		{
+			alert("已经到了最后一个");
+			return true;
+		}
+		document.getElementById("DIV").setAttribute("value",index.toString());	
+		document.getElementById("iframe").setAttribute("src",array[index]);
+	}
+	function prev()
+	{
+		var array = new Array();
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/lumia.html");
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/nokia_output.html")
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/movie_output.html");
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/world_cup_output.html");
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/qq_output.html");
+		array.push("http://cp01-testing-ps6076.cp01.baidu.com:8900/old_boy_output.html");
+		var index = parseInt(document.getElementById("DIV").getAttribute("value")) - 1;
+		if (index < 0)
+		{
+			alert("已经是第一个");
+			return true;
+		}
+		document.getElementById("DIV").setAttribute("value",index.toString());	
+		document.getElementById("iframe").setAttribute("src",array[index]);
+	}
+	
+</script>
+
+<?php $this->endContent(); ?>
+

@@ -1,0 +1,175 @@
+<?php
+        $r['topic'] = "compile";
+        $this->beginContent('/layouts/main',array('topic'=>$r));
+?>
+<div class="container">
+<br/>
+<ul class="nav nav-pills">
+  <li><a href="?r=compile/index">任务提交</a></li>
+  <li class="active"><a href="#">日志输出</a></li>
+  <li><a href="#">结果分析</a></li>
+</ul>
+
+<form id='form'>
+  <div>
+
+    <div class="page-header">
+    <h3>相关日志</h3>
+    </div>
+    <div>
+    <table width="100%">
+       <tr>
+          <td align="center" width="50%">
+             <div align="center" class="btn-group">
+			 <button  class="btn btn-default" type='button' id='show_err_msg'>实时显示Err日志</button>	
+             </div>
+             <br/>
+          </td>
+          <td align="center" width="50%">
+             <div align="center" class="btn-group">
+			 <button  class="btn btn-default" type='button' id='show_log_msg'>实时显示Log日志</button>	
+             </div>
+             <br/>
+          </td>
+        </tr>
+
+       <tr>
+          <th colspan="2">
+			<p></p> 
+			<div class="panel panel-info">	
+    		<div class="panel-heading">Err日志</div>
+			<div align="left" class="panel-body" id="errmsg">
+             </div>
+			</div>
+			<div class="panel panel-success">	
+    		<div class="panel-heading">Log日志</div>
+			<div align="left" class="panel-body" id="logmsg">
+             </div>
+			</div>
+          </th>
+        </tr>
+
+	
+       </table>
+     </div>
+        <br/>
+    <hr/>
+  </div>
+</form>
+
+</div>
+<script>
+var tinterval_err;
+$('#show_err_msg').click(function(){
+	//window.clearInterval(tinterval_log);
+	tinterval_err=setInterval("Err_Msg_Data()",3000);
+});
+
+var tinterval_log;
+$('#show_log_msg').click(function(){
+	//window.clearInterval(tinterval_err);
+	tinterval_log=setInterval("Log_Msg_Data()",3000);
+});
+
+var err_count=0;
+function Err_Msg_Data() {
+		var fd = new FormData();
+		fd.append("Count",err_count);
+		<?php
+            $mission_id = split("&&",$id_num);
+			if($mission_id[0] == "")
+			{
+				echo "fd.append(\"Mission_id\",\"null\");\n";
+			}
+			else{
+        		echo "fd.append(\"Mission_id\",\"".$mission_id[0]."\");\n";
+			};
+		?>
+		var xhr = new XMLHttpRequest(); 
+		xhr.addEventListener("load",err_markComplete,false);
+    	xhr.open("POST", "?r=compile/errmsgdata");
+    	//xhr.open("POST", "?r=compile/test");
+		xhr.send(fd);
+		//alert("Transmit OK!");	
+}
+var err_flag=0;
+var err_display=0;
+function err_markComplete(evt)
+{
+	var err_msg=evt.target.responseText;
+	//if (log_flag > 0)
+	//{
+		//$('#logmsg').empty();
+	//	var logstyle = document.getElementById ("logmsg");	
+	//	logstyle.style.display="none";
+	//	log_display=0;
+	//}
+    //if(err_flag===1 && err_display===0)
+	//{
+	//	var errstyle = document.getElementById ("errmsg");  
+    //    errstyle.style.display="none";
+    //    err_display=0;
+	//}
+	var p=$('#errmsg p:last');
+	p=$(err_msg).appendTo('#errmsg');
+    p=$('#errmsg p:last');
+    err_count=parseInt(p.attr('cc'));
+	err_flag=1;
+	//err_display=1;
+	var missioncomplete=document.getElementById("missioncomplete");
+	if (missioncomplete!==null)
+	{
+		window.clearInterval(tinterval_err);
+	}
+}
+
+
+var log_count=0;
+function Log_Msg_Data() {
+		var fd = new FormData();
+		fd.append("Count",log_count);
+		<?php
+            $mission_id = split("&&",$id_num);
+			if($mission_id[0] == "")
+			{
+				echo "fd.append(\"Mission_id\",\"null\");\n";
+			}
+			else{
+        		echo "fd.append(\"Mission_id\",\"".$mission_id[0]."\");\n";
+			};
+		?>
+		var xhr = new XMLHttpRequest(); 
+		xhr.addEventListener("load",log_markComplete,false);
+    	xhr.open("POST", "?r=compile/logmsgdata");
+    	//xhr.open("POST", "?r=compile/test");
+		xhr.send(fd);
+		//alert("Transmit OK!");	
+}
+var log_flag=0;
+var log_display=0;
+function log_markComplete(evt)
+{
+	var log_msg=evt.target.responseText;
+	//if (err_flag > 0)
+	//{
+	//	//$('#errmsg').empty();
+	//	var logstyle = document.getElementById ("logmsg");	
+	//	logstyle.style.display="none";
+	//	log_display=0;
+	//}
+	var p=$('#logmsg p:last');
+	p=$(log_msg).appendTo('#logmsg');
+    p=$('#logmsg p:last');
+    log_count=parseInt(p.attr('ccc'));
+	//log_flag=1;
+	//log_display=1;
+	var logmissioncomplete=document.getElementById("logmissioncomplete");
+	if (logmissioncomplete!==null)
+	{
+		window.clearInterval(tinterval_log);
+	}
+}
+
+</script>
+
+<?php $this->endContent(); ?>

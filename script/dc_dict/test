@@ -1,0 +1,398 @@
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0  2015 ?        00:02:37 init [3]                                                                                        
+root         2     0  0  2015 ?        00:00:00 [kthreadd]
+root         3     2  0  2015 ?        00:00:28 [migration/0]
+root         4     2  0  2015 ?        00:16:08 [ksoftirqd/0]
+root         5     2  0  2015 ?        00:00:00 [migration/0]
+root         6     2  0  2015 ?        00:00:18 [watchdog/0]
+root         7     2  0  2015 ?        00:05:09 [migration/1]
+root         8     2  0  2015 ?        00:00:00 [migration/1]
+root         9     2  0  2015 ?        00:01:33 [ksoftirqd/1]
+root        10     2  0  2015 ?        00:00:07 [watchdog/1]
+root        11     2  0  2015 ?        00:06:59 [migration/2]
+root        12     2  0  2015 ?        00:00:00 [migration/2]
+root        13     2  0  2015 ?        00:00:31 [ksoftirqd/2]
+root        14     2  0  2015 ?        00:00:07 [watchdog/2]
+root        15     2  0  2015 ?        00:02:08 [migration/3]
+root        16     2  0  2015 ?        00:00:00 [migration/3]
+root        17     2  0  2015 ?        00:00:10 [ksoftirqd/3]
+root        18     2  0  2015 ?        00:00:07 [watchdog/3]
+root        19     2  0  2015 ?        00:00:31 [migration/4]
+root        20     2  0  2015 ?        00:00:00 [migration/4]
+root        21     2  0  2015 ?        00:00:04 [ksoftirqd/4]
+root        22     2  0  2015 ?        00:00:06 [watchdog/4]
+root        23     2  0  2015 ?        00:00:10 [migration/5]
+root        24     2  0  2015 ?        00:00:00 [migration/5]
+root        25     2  0  2015 ?        00:00:02 [ksoftirqd/5]
+root        26     2  0  2015 ?        00:00:06 [watchdog/5]
+root        27     2  0  2015 ?        00:00:26 [migration/6]
+root        28     2  0  2015 ?        00:00:00 [migration/6]
+root        29     2  0  2015 ?        00:14:45 [ksoftirqd/6]
+root        30     2  0  2015 ?        00:00:10 [watchdog/6]
+root        31     2  0  2015 ?        00:09:48 [migration/7]
+root        32     2  0  2015 ?        00:00:00 [migration/7]
+root        33     2  0  2015 ?        00:01:35 [ksoftirqd/7]
+root        34     2  0  2015 ?        00:00:07 [watchdog/7]
+root        35     2  0  2015 ?        00:06:37 [migration/8]
+root        36     2  0  2015 ?        00:00:00 [migration/8]
+root        37     2  0  2015 ?        00:00:29 [ksoftirqd/8]
+root        38     2  0  2015 ?        00:00:07 [watchdog/8]
+root        39     2  0  2015 ?        00:01:42 [migration/9]
+root        40     2  0  2015 ?        00:00:00 [migration/9]
+root        41     2  0  2015 ?        00:00:09 [ksoftirqd/9]
+root        42     2  0  2015 ?        00:00:06 [watchdog/9]
+root        43     2  0  2015 ?        00:00:36 [migration/10]
+root        44     2  0  2015 ?        00:00:00 [migration/10]
+root        45     2  0  2015 ?        00:00:02 [ksoftirqd/10]
+root        46     2  0  2015 ?        00:00:06 [watchdog/10]
+root        47     2  0  2015 ?        00:00:15 [migration/11]
+root        48     2  0  2015 ?        00:00:00 [migration/11]
+root        49     2  0  2015 ?        00:02:19 [ksoftirqd/11]
+root        50     2  0  2015 ?        00:00:07 [watchdog/11]
+root        51     2  0  2015 ?        00:51:31 [events/0]
+root        52     2  0  2015 ?        00:02:14 [events/1]
+root        53     2  0  2015 ?        00:02:13 [events/2]
+root        54     2  0  2015 ?        00:02:14 [events/3]
+root        55     2  0  2015 ?        00:01:54 [events/4]
+root        56     2  0  2015 ?        00:02:01 [events/5]
+root        57     2  0  2015 ?        00:02:15 [events/6]
+root        58     2  0  2015 ?        00:02:09 [events/7]
+root        59     2  0  2015 ?        00:02:05 [events/8]
+root        60     2  0  2015 ?        00:01:54 [events/9]
+root        61     2  0  2015 ?        00:01:54 [events/10]
+root        62     2  0  2015 ?        00:02:11 [events/11]
+root        63     2  0  2015 ?        00:00:00 [cgroup]
+root        64     2  0  2015 ?        00:01:50 [khelper]
+root        67     2  0  2015 ?        00:00:00 [netns]
+root        70     2  0  2015 ?        00:00:00 [async/mgr]
+root       193     2  0  2015 ?        00:00:43 [sync_supers]
+root       195     2  0  2015 ?        00:00:36 [bdi-default]
+root       196     2  0  2015 ?        00:07:40 [kblockd/0]
+root       197     2  0  2015 ?        00:01:02 [kblockd/1]
+root       198     2  0  2015 ?        00:01:07 [kblockd/2]
+root       199     2  0  2015 ?        00:00:38 [kblockd/3]
+root       200     2  0  2015 ?        00:00:21 [kblockd/4]
+root       201     2  0  2015 ?        00:00:18 [kblockd/5]
+root       202     2  0  2015 ?        00:07:58 [kblockd/6]
+root       203     2  0  2015 ?        00:01:29 [kblockd/7]
+root       204     2  0  2015 ?        00:00:55 [kblockd/8]
+root       205     2  0  2015 ?        00:00:37 [kblockd/9]
+root       206     2  0  2015 ?        00:00:20 [kblockd/10]
+root       207     2  0  2015 ?        00:00:09 [kblockd/11]
+root       209     2  0  2015 ?        00:12:13 [kacpid]
+root       210     2  0  2015 ?        00:38:09 [kacpi_notify]
+root       211     2  0  2015 ?        00:00:00 [kacpi_hotplug]
+work       333 32751  0 Aug15 ?        00:00:00 python pat.py pat cat ../log/1/17.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+root       366     2  0  2015 ?        00:00:00 [ata/0]
+root       367     2  0  2015 ?        00:00:00 [ata/1]
+root       368     2  0  2015 ?        00:00:00 [ata/2]
+root       369     2  0  2015 ?        00:00:00 [ata/3]
+root       370     2  0  2015 ?        00:00:00 [ata/4]
+root       371     2  0  2015 ?        00:00:00 [ata/5]
+root       372     2  0  2015 ?        00:00:00 [ata/6]
+root       373     2  0  2015 ?        00:00:00 [ata/7]
+root       374     2  0  2015 ?        00:00:00 [ata/8]
+root       375     2  0  2015 ?        00:00:00 [ata/9]
+root       376     2  0  2015 ?        00:00:00 [ata/10]
+root       377     2  0  2015 ?        00:00:00 [ata/11]
+root       378     2  0  2015 ?        00:00:00 [ata_aux]
+root       383     2  0  2015 ?        00:00:00 [kseriod]
+root       388     2  0  2015 ?        00:00:00 [md/0]
+root       389     2  0  2015 ?        00:00:00 [md/1]
+root       390     2  0  2015 ?        00:00:00 [md/2]
+root       391     2  0  2015 ?        00:00:00 [md/3]
+root       392     2  0  2015 ?        00:00:00 [md/4]
+root       393     2  0  2015 ?        00:00:00 [md/5]
+root       394     2  0  2015 ?        00:00:00 [md/6]
+root       395     2  0  2015 ?        00:00:00 [md/7]
+root       396     2  0  2015 ?        00:00:00 [md/8]
+root       397     2  0  2015 ?        00:00:00 [md/9]
+root       398     2  0  2015 ?        00:00:00 [md/10]
+root       399     2  0  2015 ?        00:00:00 [md/11]
+root       400     2  0  2015 ?        00:00:00 [md_misc/0]
+root       401     2  0  2015 ?        00:00:00 [md_misc/1]
+root       402     2  0  2015 ?        00:00:00 [md_misc/2]
+root       403     2  0  2015 ?        00:00:00 [md_misc/3]
+root       404     2  0  2015 ?        00:00:00 [md_misc/4]
+root       405     2  0  2015 ?        00:00:00 [md_misc/5]
+root       406     2  0  2015 ?        00:00:00 [md_misc/6]
+root       407     2  0  2015 ?        00:00:00 [md_misc/7]
+root       408     2  0  2015 ?        00:00:00 [md_misc/8]
+root       409     2  0  2015 ?        00:00:00 [md_misc/9]
+root       410     2  0  2015 ?        00:00:00 [md_misc/10]
+root       411     2  0  2015 ?        00:00:00 [md_misc/11]
+root       557     2  0  2015 ?        00:00:19 [khungtaskd]
+root       561     2  0  2015 ?        00:21:20 [kswapd0]
+root       562     2  0  2015 ?        00:18:34 [kswapd1]
+root       615     2  0  2015 ?        00:00:00 [aio/0]
+root       616     2  0  2015 ?        00:00:00 [aio/1]
+root       617     2  0  2015 ?        00:00:00 [aio/2]
+root       618     2  0  2015 ?        00:00:00 [aio/3]
+root       619     2  0  2015 ?        00:00:00 [aio/4]
+root       620     2  0  2015 ?        00:00:00 [aio/5]
+root       621     2  0  2015 ?        00:00:00 [aio/6]
+root       622     2  0  2015 ?        00:00:00 [aio/7]
+root       623     2  0  2015 ?        00:00:00 [aio/8]
+root       624     2  0  2015 ?        00:00:00 [aio/9]
+root       625     2  0  2015 ?        00:00:00 [aio/10]
+root       626     2  0  2015 ?        00:00:00 [aio/11]
+root       645     2  0  2015 ?        00:00:00 [kthrotld/0]
+root       646     2  0  2015 ?        00:00:00 [kthrotld/1]
+root       647     2  0  2015 ?        00:00:00 [kthrotld/2]
+root       648     2  0  2015 ?        00:00:00 [kthrotld/3]
+root       649     2  0  2015 ?        00:00:00 [kthrotld/4]
+root       650     2  0  2015 ?        00:00:00 [kthrotld/5]
+root       651     2  0  2015 ?        00:00:00 [kthrotld/6]
+root       652     2  0  2015 ?        00:00:00 [kthrotld/7]
+root       653     2  0  2015 ?        00:00:00 [kthrotld/8]
+root       654     2  0  2015 ?        00:00:00 [kthrotld/9]
+root       655     2  0  2015 ?        00:00:00 [kthrotld/10]
+root       656     2  0  2015 ?        00:00:00 [kthrotld/11]
+root       818     2  0  2015 ?        00:00:00 [cciss_scan]
+root       862     2  0  2015 ?        00:00:00 [scsi_eh_0]
+root       868     2  0  2015 ?        00:00:00 [megasas_ocr/0]
+root       869     2  0  2015 ?        00:00:00 [megasas_ocr/1]
+root       870     2  0  2015 ?        00:00:00 [megasas_ocr/2]
+root       871     2  0  2015 ?        00:00:00 [megasas_ocr/3]
+root       872     2  0  2015 ?        00:00:00 [megasas_ocr/4]
+root       873     2  0  2015 ?        00:00:00 [megasas_ocr/5]
+root       874     2  0  2015 ?        00:00:00 [megasas_ocr/6]
+root       875     2  0  2015 ?        00:00:00 [megasas_ocr/7]
+root       876     2  0  2015 ?        00:00:00 [megasas_ocr/8]
+root       877     2  0  2015 ?        00:00:00 [megasas_ocr/9]
+root       878     2  0  2015 ?        00:00:00 [megasas_ocr/10]
+root       879     2  0  2015 ?        00:00:00 [megasas_ocr/11]
+root       907     2  0  2015 ?        00:00:00 [kpsmoused]
+work      1492 17111  0 Nov12 ?        00:00:35 /home/work/env/apache2/bin/httpd -k start
+work      1598 17111  0 Nov22 ?        00:00:38 /home/work/env/apache2/bin/httpd -k start
+work      1936  3782  0 Sep08 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work      1937  1936  0 Sep08 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work      1999  1937  0 Sep08 ?        00:00:00 python pat.py pat cat ../log/4/12.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+work      2239 17111  0 Nov15 ?        00:00:42 /home/work/env/apache2/bin/httpd -k start
+root      2317     2  0  2015 ?        00:00:00 [ksuspend_usbd]
+root      2322     2  0  2015 ?        00:00:00 [khubd]
+work      2352     1  0 Apr07 ?        00:00:00 /bin/bash -l
+root      2644     2  0  2015 ?        00:00:00 [kauditd]
+work      2795  2352  0 Apr07 ?        00:00:00 vim DictionaryController.php
+root      2833     2  0  2015 ?        00:00:00 [kstriped]
+root      3450     2  0  2015 ?        00:46:35 [flush-8:0]
+work      3782 17111  0 Aug30 ?        00:00:01 /home/work/env/apache2/bin/httpd -k start
+daemon    3979 14452  0 Dec09 ?        00:00:00 /root/apache2/bin/httpd -k start
+root      4214     1  0 Dec10 ?        00:00:00 /has/hdoctor/../common/bin/mega/MegaTool aen 9 3
+rpc       4410     1  0  2015 ?        00:00:00 portmap
+root      4486     1  0  2015 ?        00:00:00 xinetd -stayalive -pidfile /var/run/xinetd.pid
+root      4495     1  0  2015 ?        00:00:17 crond
+root      4538     1  0  2015 ?        00:00:00 bin/matrix-loader -f bin/load-bios.sh -p status/matrix-bios -F conf/matrix-bios.conf
+root      4552  4538  0  2015 ?        00:43:53 ruby /matrix/matrix-bios/ruby/bin/matrix-bios agent --confdir conf --logdest /dev/null --certname 10.99.16.57 --no-daemonize
+dbus      4583     1  0  2015 ?        00:00:00 dbus-daemon-1 --system
+root      4659     1  0  2015 ?        00:05:07 syslogd -m 0
+root      4663     1  0  2015 ?        00:00:00 klogd -x
+nobody    4677     1  0  2015 ?        00:06:22 proftpd: (accepting connections)
+root      4687     1  0  2015 ttyS0    00:00:00 /sbin/agetty /dev/ttyS0 115200 vt100
+root      4691     1  0  2015 tty1     00:00:00 /sbin/mingetty tty1
+root      4692     1  0  2015 tty2     00:00:00 /sbin/mingetty tty2
+root      4693     1  0  2015 tty3     00:00:00 /sbin/mingetty tty3
+root      4694     1  0  2015 tty4     00:00:00 /sbin/mingetty tty4
+root      4695     1  0  2015 tty5     00:00:00 /sbin/mingetty tty5
+root      4696     1  0  2015 tty6     00:00:00 /sbin/mingetty tty6
+root      4794     1  0  2015 ?        00:00:00 executor: Sailor Jupiter [1.0.26.0]
+root      4795  4794  0  2015 ?        00:09:10 executor: Sailor Moon [1.0.26.0]
+work      5315 17111  0 Aug30 ?        00:00:05 /home/work/env/apache2/bin/httpd -k start
+root      5356     1  0  2015 ?        00:00:00 /bin/sh ./supervise.bscpserver --run
+root      5363  5356  0  2015 ?        00:00:00 /noah/modules/fb99a82f96f26654985d52da37bf10f3/sbin/bscpserver -D
+root      5494     1  0  2015 ?        00:00:00 /bin/sh -- /noah/modules/c0b527e8b1ce71007f8164d07195a8a2/supervise.logagent --run
+root      5502  5494  0  2015 ?        00:00:00 /bin/sh -- /noah/modules/c0b527e8b1ce71007f8164d07195a8a2/supervise.logagent --run
+nobody    5503  5502  0  2015 ?        02:55:30 ./bin/noah-logagent
+root      5696     1  0  2015 ?        00:00:00 /bin/sh /noah/modules/947c439fb3fdc31fec129afe54cd3f1d/NOAH/control start
+root      5698  5696  0  2015 ?        00:00:00 /bin/bash ./supervise.drct --run
+root      5704  5698  0  2015 ?        10:59:30 ./drct
+root      5823     1  0 Oct27 ?        00:00:00 /has/has_client/has_agent
+root      5833  5823  0 Oct27 ?        00:00:11 /has/has_client/has_agent
+root      5834  5833  0 Oct27 ?        00:00:53 /has/has_client/has_agent
+root      5835  5833  0 Oct27 ?        00:20:26 /has/has_client/has_agent
+root      6476     1  0  2015 ?        00:00:00 /bin/sh /noah/modules/61b466138e329a63e6be0198c806f237/NOAH/control start
+nobody    6477  6476  0  2015 ?        03:05:45 ./noah-scribe-agent
+work      6535 17111  0 Aug24 ?        00:00:00 /home/work/env/apache2/bin/httpd -k start
+root      7465     1  0  2015 ?        00:00:00 /bin/sh -- /noah/modules/0f3d0d85e95b9da37fcf53119676277c/NOAH/control start
+root      7466  7465  0  2015 ?        00:31:44 ../bin/conf-agent
+root      7501     1  0  2015 ?        00:06:02 /bin/bash /usr/bin/bcron_start
+work      7543 21392  0 Sep17 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work      7544  7543  0 Sep17 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work      7567  7544  0 Sep17 ?        00:00:00 python pat.py pat cat ../log/6/22.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+root      7590     1  0  2015 ?        00:00:00 /bin/sh /noah/modules/fd2f9761a03f4cfd7c47545b36a01599/NOAH/control start
+nobody    7591  7590  0  2015 ?        13:19:04 /noah/bin/python3 ./ncsi-agent.py
+work      8012     1  0 May09 ?        00:00:00 /bin/bash -l
+work      8430 20209  0 Sep21 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work      8431  8430  0 Sep21 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work      8458  8431  0 Sep21 ?        00:00:00 python pat.py pat cat ../log/3/09.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+root      8537     2  0  2015 ?        04:43:13 [kipmi0]
+work      8613 17111  0 Nov25 ?        00:00:38 /home/work/env/apache2/bin/httpd -k start
+work      8664 30691  0 Sep16 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work      8665  8664  0 Sep16 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work      8686 17111  0 Dec05 ?        00:00:07 /home/work/env/apache2/bin/httpd -k start
+work      8695  8665  0 Sep16 ?        00:00:00 python pat.py pat cat ../log/5/21.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+work      8709 17111  0 Dec05 ?        00:00:04 /home/work/env/apache2/bin/httpd -k start
+work      8713  8012  0 May09 ?        00:00:00 vim main.php
+root      8764     1  0 Oct27 ?        00:00:00 udevd --daemon
+work      8812 17111  0 Nov25 ?        00:00:34 /home/work/env/apache2/bin/httpd -k start
+work      8813 17111  0 Nov25 ?        00:00:09 /home/work/env/apache2/bin/httpd -k start
+root      9154     1  0 Oct27 ?        00:16:33 /bin/bash /has/hdoctor/monitor/monitor_plugin_ctrl
+work      9721 17111  0 Aug30 ?        00:00:03 /home/work/env/apache2/bin/httpd -k start
+work      9909 17111  0 Nov14 ?        00:00:29 /home/work/env/apache2/bin/httpd -k start
+work     10178 17111  0 Nov14 ?        00:00:18 /home/work/env/apache2/bin/httpd -k start
+work     10348 17111  0 Sep09 ?        00:00:00 /home/work/env/apache2/bin/httpd -k start
+work     10387 17111  0 Jul28 ?        00:06:18 /home/work/env/apache2/bin/httpd -k start
+work     10674 17111  0 Nov11 ?        00:00:34 /home/work/env/apache2/bin/httpd -k start
+work     10967 17111  0 Aug26 ?        00:00:13 /home/work/env/apache2/bin/httpd -k start
+work     11322     1  0  2015 ?        00:00:00 /bin/sh ./mysqld_safe
+root     11554     1  0 Nov18 ?        00:00:00 /bin/sh ../bin/supervise.argus_agent --run
+root     11561 11554  0 Nov18 ?        01:26:45 /noah/modules/e0bb3cd0090203534d794a5ec88f12d7/bin/argus-agent --core=false
+work     11572 11322  0  2015 ?        01:06:58 /home/work/.jumbo/bin/mysqld --basedir=/home/work/.jumbo --datadir=/home/work/.jumbo/var/lib/mysql --plugin-dir=/home/work/.jumbo/lib/mysql/plugin --log-error=/home/work/.jumbo/var/lib/mysql/cp01-qa-spider004.cp01.baidu.com.err --pid-file=/home/work/.jumbo/var/lib/mysql/cp01-qa-spider004.cp01.baidu.com.pid --socket=/home/work/.jumbo/var/run/mysqld/mysqld.sock --port=3306
+work     11632 26382  0 Aug30 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     11633 11632  0 Aug30 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     11668 11633  0 Aug30 ?        00:00:00 python pat.py pat cat ../log/1/23.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+daemon   11792 14452  0 Dec09 ?        00:00:00 /root/apache2/bin/httpd -k start
+work     11803 10348  0 Sep11 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     11804 11803  0 Sep11 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     11857 11804  0 Sep11 ?        00:00:00 python pat.py pat cat ../log/0/14.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+root     11917     1  0  2015 ?        00:00:00 /matrix/services/log_counter_collector/casio-loader/bin/casio-loader64 -f taskset -c 11 /matrix/services/log_counter_collector/bin/log_counter_collector -c /matrix/services/log_counter_collector/conf/log_counter_collector.conf -p /home/casio/log/casio-loader/status/log_counter_collector
+root     11919 11917  0  2015 ?        00:22:27 /matrix/services/log_counter_collector/bin/log_counter_collector -c /matrix/services/log_counter_collector/conf/log_counter_collector.conf
+root     12010     1  0  2015 ?        00:02:26 ./bin/rig_agent
+work     12141 22476  0 Sep07 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     12142 12141  0 Sep07 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     12377 12142  0 Sep07 ?        00:00:00 python pat.py pat cat ../log/3/16.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+work     13189 17111  0 Aug31 ?        00:00:23 /home/work/env/apache2/bin/httpd -k start
+root     13366     1  0 Nov18 ?        00:00:00 /bin/sh ../bin/supervise.server_inspector --run
+root     13373 13366  0 Nov18 ?        02:20:42 /noah/modules/4d897bb65fa11373fd638d4707164245/bin/server_inspector --core=false
+daemon   13582 14452  0 Dec09 ?        00:00:00 /root/apache2/bin/httpd -k start
+root     13847     1  0 Dec07 ?        00:00:00 /sbin/noah
+root     13848 13847  0 Dec07 ?        00:00:04 /sbin/noah
+work     13915 17111  0 Nov22 ?        00:00:27 /home/work/env/apache2/bin/httpd -k start
+work     14012 17111  0 Nov22 ?        00:00:21 /home/work/env/apache2/bin/httpd -k start
+root     14260 13848  0 Dec07 ?        00:07:03 /var/lib/misc/noah
+root     14452     1  0  2015 ?        00:04:41 /root/apache2/bin/httpd -k start
+root     14614  4795  0 Nov18 ?        00:01:42 executor: Sailor Venus {0011cc00-0000-0000-0002-560424127291} Running [14626]
+work     14626 14614  0 Nov18 ?        00:56:44 /noah/tmp/monitor-client/instance_inspector 1.platform.spider.cq01 0 1.platform.spider.cq01 0
+work     14677  9721  0 Sep12 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     14678 14677  0 Sep12 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     14730 14678  0 Sep12 ?        00:00:00 python pat.py pat cat ../log/1/10.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+root     14820     1  0 Nov21 ?        00:00:00 nginx: master process /noah/modules/212c6d18514583aa142460750055d7aa/nginx/sbin/bns_nginx -p /noah/modules/212c6d18514583aa142460750055d7aa/nginx -c /noah/modules/212c6d18514583aa142460750055d7aa/nginx/conf/nginx.conf
+nobody   14823 14820  0 Nov21 ?        00:00:00 nginx: worker process                                                                                                                                                                              
+work     14827 17111  0 Oct31 ?        00:00:14 /home/work/env/apache2/bin/httpd -k start
+root     14834     1  0 Nov21 ?        00:00:00 ./supervise.wna -p /noah/modules/212c6d18514583aa142460750055d7aa/../../tmp/naming-agent/status/naming-agent -f /noah/modules/212c6d18514583aa142460750055d7aa/bin//naming-agent -r /noah/modules/212c6d18514583aa142460750055d7aa/bin/warning.sh -t 60
+root     14835 14834  0 Nov21 ?        00:59:36 /noah/modules/212c6d18514583aa142460750055d7aa/bin//naming-agent
+work     14838 17111  0 Nov22 ?        00:00:20 /home/work/env/apache2/bin/httpd -k start
+root     15008     1  0 Nov17 ?        00:16:44 /noah/modules/809ed6067ed9874ca2bb34753d67df17/bin/gko3 bbts-agent
+work     15664 17111  0 Nov15 ?        00:00:37 /home/work/env/apache2/bin/httpd -k start
+work     15788 10967  0 Sep07 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     15789 15788  0 Sep07 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     15830 10387  0 Aug19 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_log_spimon.sh 'www.paperpub.org/conf/' '2016-08-18 18:00' '2016-08-18 19:00' 2>/home/work/ec_test_service/script/dictrace//spimon.txt
+work     15831 15830  0 Aug19 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_log_spimon.sh www.paperpub.org/conf/ 2016-08-18 18:00 2016-08-18 19:00
+work     15853 15789  0 Sep07 ?        00:00:00 python pat.py pat cat ../log/3/22.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+work     15908 15831  0 Aug19 ?        00:00:00 python pat.py pat sh query_range.sh 'www.paperpub.org/conf/' '2016-08-18 18:00' '2016-08-18 19:00' 120
+root     16052     1  0 Oct27 ?        00:00:00 /matrix/services/casio/casio-loader/bin/casio-loader64 -f taskset -c 11 /matrix/services/casio/bin/scribed -c /matrix/services/casio/conf/client.conf -p /home/casio/log/casio-loader/status/scribe
+root     16054 16052  0 Oct27 ?        00:08:15 /matrix/services/casio/bin/scribed -c /matrix/services/casio/conf/client.conf
+work     16062 17111  0 Aug30 ?        00:00:01 /home/work/env/apache2/bin/httpd -k start
+root     16184     1  0 Oct27 ?        00:00:00 /matrix/services/casio/casio-loader/bin/casio-loader64 -f taskset -c 11 /matrix/services/casio/bin/casio-agent -c /matrix/services/casio/conf/agent.conf -p /home/casio/log/casio-loader/status/agent
+root     16186 16184  0 Oct27 ?        00:27:10 /matrix/services/casio/bin/casio-agent -c /matrix/services/casio/conf/agent.conf
+work     16203 17111  0 Nov22 ?        00:00:24 /home/work/env/apache2/bin/httpd -k start
+root     16216     1  0 Jan02 ?        00:05:09 /usr/sbin/sshd
+root     16558     1  0 Nov03 ?        00:09:01 /bin/sh /noah/modules/68f6c2f7fd27e714ea1140eb2936fed2/NOAH/monitor_gianod.sh /noah/modules/68f6c2f7fd27e714ea1140eb2936fed2/NOAH/../
+root     16566 16558  0 Nov03 ?        00:39:29 /noah/modules/68f6c2f7fd27e714ea1140eb2936fed2/NOAH/..//bin/gianod --log_dir=/home/noah/baas/gianod_log --gianod_p_user=peiyanqiu --gianod_s_user=giano_gianod --gianod_group=g_giano --as_service_name=giano_as --gianod_heartbeat_interval_in_s=60 --gos_gianod_heartbeat_interval_in_s=60 --flagfile=/noah/modules/68f6c2f7fd27e714ea1140eb2936fed2/NOAH/..//conf/gianod.conf
+daemon   16718 14452  0 10:07 ?        00:00:00 /root/apache2/bin/httpd -k start
+work     17111     1  0 May13 ?        00:03:38 /home/work/env/apache2/bin/httpd -k start
+work     17112 17111  0 May13 ?        00:02:55 /home/work/env/apache2/bin/cronolog /home/work/env/log/apache/%Y/%m/error.log
+work     17113 17111  0 May13 ?        00:00:01 /home/work/env/apache2/bin/cronolog /home/work/env/log/apache/%Y/%m/%Y-%m-%d_access.log
+root     18547     1  0 Oct27 ?        00:21:56 /has/hdoctor/monitor/plugins/logcheck/logcheck
+root     18602     1  0 Oct27 ?        00:00:00 /has/hdoctor/monitor/plugins/mcelog/checkmce --config-file /has/hdoctor/monitor/plugins/mcelog/conf/mcelog.conf --daemon
+work     19378 17111  0 10:08 ?        00:00:00 /home/work/env/apache2/bin/httpd -k start
+root     19681     1  0  2015 ?        00:00:00 /noah/bin/python2.7 webdir_client.py start
+root     19688 19681  0  2015 ?        06:13:41 /noah/bin/python2.7 local_server_detect.py > /dev/null 2>&1
+work     20174 17111  0 Sep01 ?        00:00:06 /home/work/env/apache2/bin/httpd -k start
+work     20209 17111  0 Sep12 ?        00:00:02 /home/work/env/apache2/bin/httpd -k start
+work     20248  6535  0 Aug30 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     20249 20248  0 Aug30 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     20283 20249  0 Aug30 ?        00:00:00 python pat.py pat cat ../log/2/06.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+daemon   20508 14452  0 10:17 ?        00:00:00 /root/apache2/bin/httpd -k start
+root     20745  9154  0 10:17 ?        00:00:00 sleep 60
+daemon   21035 14452  0 Dec09 ?        00:00:00 /root/apache2/bin/httpd -k start
+work     21392 17111  0 Aug31 ?        00:00:04 /home/work/env/apache2/bin/httpd -k start
+work     21430 29592  0 Sep12 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     21431 21430  0 Sep12 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     21464 21431  0 Sep12 ?        00:00:00 python pat.py pat cat ../log/1/04.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+daemon   22148 14452  0 Dec09 ?        00:00:00 /root/apache2/bin/httpd -k start
+root     22214  7501  0 10:17 ?        00:00:00 sleep 60
+root     22378     1  0 Oct12 ?        00:14:53 /bin/sh /noah/modules/9c0d0171992b59b84bcea3f1bcbe8829/NOAH/monitor_bsdc_agent.sh /noah/modules/9c0d0171992b59b84bcea3f1bcbe8829/NOAH/../bin
+nobody   22383 22378  0 Oct12 ?        01:11:29 /noah/modules/9c0d0171992b59b84bcea3f1bcbe8829/bin/bsdc_agent --log_dir=/home/noah/baas/log --bsdc_store_conf_file=/noah/modules/9c0d0171992b59b84bcea3f1bcbe8829/bin/../conf/agent_store.conf --process_cpu_usage_limit=5 --process_pysical_mem_usage_limit_in_kb=1024000 --process_virtual_mem_usage_limit_in_kb=4096000 --bsdc_throughput_category=BsdcAgentThroughput --sofa_pbrpc_live_connection_percent=0.4 --run_as_who=nobody
+work     22476 17111  0 Sep07 ?        00:00:00 /home/work/env/apache2/bin/httpd -k start
+work     23022 17111  0 Nov11 ?        00:00:14 /home/work/env/apache2/bin/httpd -k start
+work     23473 17111  0 Nov11 ?        00:00:53 /home/work/env/apache2/bin/httpd -k start
+root     23706     1  0 Nov11 ?        00:20:33 /bin/sh /noah/run/baas/modules/baas_agent/NOAH/monitor_baas_agent.sh /noah/run/baas/modules/baas_agent/agent
+root     23750 23706  1 Nov11 ?        08:47:40 /noah/run/baas/modules/baas_agent/agent/baas_agent --log_dir=/home/noah/baas/log --baas_ca_cert_save_path=/etc/ --baas_pid_cache_path=/noah/run/baas/baas_agent_cache/pid.cache --baas_cert_cache_path=/noah/run/baas/baas_agent_cache/cert.cache --baas_default_user_cache_path=/noah/run/baas/baas_agent_cache/default_user.cache --baas_default_role_group_cache_path=/noah/run/baas/baas_agent_cache/default_role_group.cache --baas_group_role_cache_path=/noah/run/baas/baas_agent_cache/group_role_info.cache --baas_pid_status_cache_path=/noah/run/baas/baas_agent_cache/pid_status.cache --baas_sid_attribute_cred_cache_path=/noah/run/baas/baas_agent_cache/sid_attr.cache --baas_account_default_user_cache_path=/noah/run/baas/baas_agent_cache/account_default_user.cache --baas_account_cache_path=/noah/run/baas/baas_agent_cache/account.cache --baas_agent_isolation_domain_cache_path=/noah/run/baas/baas_agent_cache/isolation_domain.cache --baas_agent_vip_config_cache_path=/noah/run/baas/baas_agent_cache/vip_config.cache --baas_session_attributes_cache_path=/noah/run/baas/baas_agent_cache/session_attributes.cache --baas_ca_service_addr=ca.baas.noah.baidu.com:11011 --scan_specified_proc_time_interval_in_ms=5000 --dg_service_address=server.bils.noah.baidu.com:9666 --pg_key_cache_service_addr=server.kcs.giano.baidu.com:12983 --baas_pid_lock_path=/home/noah/baas/lock --stderrthreshold=4 --specified_process_path=/noah/run/baas/config --total_rpc_retry_time=0 --rpc_timeout_in_ms=6000 --registered_process_path=/noah/run/baas/config --sofa_pbrpc_live_connection_percent=0.4 --baas_self_route_conf_check_cycle_sec=240 --serial_number=06BCWAP --flagfile=/noah/run/baas/modules/baas_agent/agent/baas_agent_flags
+work     24760 32005  0 Sep27 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     24761 24760  0 Sep27 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+root     25023 22378  0 10:18 ?        00:00:00 sleep 2
+root     25025 16558  0 10:18 ?        00:00:00 sleep 2
+root     25035 23706  0 10:18 ?        00:00:00 sleep 2
+work     25036 30109  0 10:18 pts/1    00:00:00 ps -ef
+root     25158     1  0 Jun17 ?        00:00:00 ./supervise.wa -p /noah/modules/1a0d6d8cfc42d714e6e64627694165c7/../../tmp/webfoot-agent/status/webfoot-agent -f /noah/modules/1a0d6d8cfc42d714e6e64627694165c7/bin//webfoot-agent -r /noah/modules/1a0d6d8cfc42d714e6e64627694165c7/bin/warning.sh -t 60
+root     25159 25158  0 Jun17 ?        00:33:07 /noah/modules/1a0d6d8cfc42d714e6e64627694165c7/bin//webfoot-agent
+daemon   25956 14452  0 Dec09 ?        00:00:00 /root/apache2/bin/httpd -k start
+work     25976 13189  0 Sep02 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     25977 25976  0 Sep02 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     25987 24761  0 Sep27 ?        00:00:00 python pat.py pat cat ../log/2/03.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+work     26025 25977  0 Sep02 ?        00:00:00 python pat.py pat cat ../log/5/07.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+work     26382 17111  0 Aug17 ?        00:00:01 /home/work/env/apache2/bin/httpd -k start
+daemon   26746 14452  0 Dec11 ?        00:00:00 /root/apache2/bin/httpd -k start
+work     26762 17111  0 Sep07 ?        00:00:01 /home/work/env/apache2/bin/httpd -k start
+daemon   27996 14452  0 Dec09 ?        00:00:00 /root/apache2/bin/httpd -k start
+work     28211 20174  0 Sep24 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     28212 28211  0 Sep24 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     28229 16062  0 Sep09 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     28230 28229  0 Sep09 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     28237 28212  0 Sep24 ?        00:00:00 python pat.py pat cat ../log/6/17.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+work     28277 28230  0 Sep09 ?        00:00:00 python pat.py pat cat ../log/5/03.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+work     28467 14827  0 Nov22 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_log_spimon.sh 'ppfzjm.com/39551/77354.html' '2016-11-21 00:00' '2016-11-22 20:00' 2>/home/work/ec_test_service/script/dictrace//spimon.txt
+work     28468 28467  0 Nov22 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_log_spimon.sh ppfzjm.com/39551/77354.html 2016-11-21 00:00 2016-11-22 20:00
+work     28532 28468  0 Nov22 ?        00:00:00 python pat.py pat sh query_range.sh 'ppfzjm.com/39551/77354.html' '2016-11-21 00:00' '2016-11-22 20:00' 120
+work     29037 17111  0 Nov12 ?        00:00:30 /home/work/env/apache2/bin/httpd -k start
+work     29068 17111  0 Nov22 ?        00:00:26 /home/work/env/apache2/bin/httpd -k start
+work     29592 17111  0 Aug31 ?        00:00:14 /home/work/env/apache2/bin/httpd -k start
+root     29882     1  0 Dec02 ?        00:00:00 /bin/sh -- /noah/modules/d66ca6934f6114d379d8a5adfbcea407/supervise.minos-agent --run
+root     29896 29882  0 Dec02 ?        00:00:00 /bin/sh -- /noah/modules/d66ca6934f6114d379d8a5adfbcea407/supervise.minos-agent --run
+root     29932 16216  0 10:09 ?        00:00:00 sshd: work [priv]
+work     29951 29932  0 10:09 ?        00:00:00 sshd: work@pts/1 
+work     30076 29951  0 10:09 pts/1    00:00:00 bash -c /usr/bin/baas login --baas_user=liuwenli --baas_role=baas_all_privilege --baas_group=baas_default_group > /dev/null 2>&1 ; /usr/bin/baas disconnect_father_son_relation > /dev/null 2>&1;/usr/bin/baas bind_to_session --global_session --global_session_id=81885d07-be62-4f00-be5e-122c00a02a11 --global_index=1 --total_rpc_timeout_in_ms=500 --rpc_timeout_in_ms=500 --total_rpc_retry_time=1 > /dev/null 2>&1;$SHELL -l
+root     30088 29896  0 Dec02 ?        00:00:00 /bin/sh -- /noah/modules/d66ca6934f6114d379d8a5adfbcea407/supervise.minos-agent --run
+work     30109 30076  0 10:09 pts/1    00:00:00 /bin/bash -l
+nobody   30220 30088  0 Dec02 ?        00:19:02 ./bin/minos-agent -master_server_address 10.26.5.160:8010 -master_service_name=master.Minos.all -multiply_master=true -cpm_server_address 10.26.5.160:8010 -role agent -executor_port=425 -sofa_server_max_pending_buffer_size=200 -sofa_server_work_thread_num=10 -hdfs_checksum_switch=false -v=11 -execute_circle=1000000 -b2log_read_timeout=100000 -disk_queue_max_resvered_hours=4 -log_dir=/home/noah/minos/normal/ -max_log_size=100 -enable_tailer=false -logformat_so=./conf/liblogformat_api.so -control_port=426 -sleep_when_search_file=100 -multi_threading_in_executor_service=true -default_base_path=/home/minos -stop_logging_if_full_disk=true -minos_agent_static_infomations=agent_restart_time:"20161202_125645"?hadoop_version:"Hadoop Major Version = 2\nBaidu-SOS Revision = hadoop-client-C3.5.2-P4.1.7-A3.15.2\nBaiduPatchesCompiled = hadoop-client\nBaiduCompiledBy = dc@baidu.com\nBaiduInformation = 1.4.5\nThis Building Compiled by = build0@cp01-scm-centos4u3-build87.cp01.baidu.com\nThis Building Compiled on = Thu Oct 15 11:37:37 CST 2015\n"?linux_version:"LSB Version:?:core-3.0-amd64:core-3.0-ia32:core-3.0-noarch:graphics-3.0-amd64:graphics-3.0-ia32:graphics-3.0-noarch\nDistributor ID:?CentOS\nDescription:?CentOS release 4.3 (Final)\nRelease:?4.3\nCodename:?Final\n"?minos_version:"     $Version: minos_agent_2.0.6.13:Commit:0e6f70c31e8497e9242dee8b7f2642234542ee4f\"Oct 20 2016\"\"11:01:22\" $"?gcc_version:"Reading specs from /usr/lib/gcc/x86_64-redhat-linux/3.4.5/specs\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --disable-checking --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-java-awt=gtk --host=x86_64-redhat-linux\nThread model: posix\ngcc version 3.4.5 20051201 (Red Hat 3.4.5-2)\n?\\'"?linux_kernel_version:"Linux cp01-qa-spider004.cp01.baidu.com 2.6.32_1-14-0-0 #1 SMP Mon Mar 31 10:42:09 CST 2014 x86_64 x86_64 x86_64 GNU/Linux"?qos_status:""?cpu_cores:12?net_name:"eth1"?net_queue:2?multi_cores_binding:1
+work     30241 17111  0 Aug04 ?        00:00:01 /home/work/env/apache2/bin/httpd -k start
+root     30277 29882  0 Dec02 ?        00:00:00 /bin/sh -- /noah/modules/d66ca6934f6114d379d8a5adfbcea407/supervise.minos-agent --run
+nobody   30409 30277  0 Dec02 ?        00:19:07 ./bin/minos-agent-tk -master_server_address 10.26.5.160:8010 -master_service_name=master.Minos.all -multiply_master=true -cpm_server_address 10.26.5.160:8010 -role agent -executor_port=430 -sofa_server_max_pending_buffer_size=200 -sofa_server_work_thread_num=10 -hdfs_checksum_switch=false -v=11 -execute_circle=1000000 -b2log_read_timeout=100000 -disk_queue_max_resvered_hours=4 -log_dir=/home/noah/minos/tk/ -max_log_size=100 -enable_tailer=false -logformat_so=./conf/liblogformat_api.so -control_port=431 -sleep_when_search_file=100 -multi_threading_in_executor_service=true -default_base_path=/home/minos -stop_logging_if_full_disk=true -minos_agent_static_infomations=agent_restart_time:"20161202_125647"?hadoop_version:"Hadoop Major Version = 2\nBaidu-SOS Revision = hadoop-client-C3.5.2-P4.1.7-A3.15.2\nBaiduPatchesCompiled = hadoop-client\nBaiduCompiledBy = dc@baidu.com\nBaiduInformation = 1.4.5\nThis Building Compiled by = build0@cp01-scm-centos4u3-build87.cp01.baidu.com\nThis Building Compiled on = Thu Oct 15 11:37:37 CST 2015\n"?linux_version:"LSB Version:?:core-3.0-amd64:core-3.0-ia32:core-3.0-noarch:graphics-3.0-amd64:graphics-3.0-ia32:graphics-3.0-noarch\nDistributor ID:?CentOS\nDescription:?CentOS release 4.3 (Final)\nRelease:?4.3\nCodename:?Final\n"?minos_version:"     $Version: minos_agent_2.0.6.13:Commit:0e6f70c31e8497e9242dee8b7f2642234542ee4f\"Oct 20 2016\"\"11:01:22\" $"?gcc_version:"Reading specs from /usr/lib/gcc/x86_64-redhat-linux/3.4.5/specs\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --disable-checking --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-java-awt=gtk --host=x86_64-redhat-linux\nThread model: posix\ngcc version 3.4.5 20051201 (Red Hat 3.4.5-2)\n?\\'"?linux_kernel_version:"Linux cp01-qa-spider004.cp01.baidu.com 2.6.32_1-14-0-0 #1 SMP Mon Mar 31 10:42:09 CST 2014 x86_64 x86_64 x86_64 GNU/Linux"?qos_status:""?cpu_cores:12?net_name:"eth1"?net_queue:2?multi_cores_binding:1
+work     30513 26762  0 Sep10 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     30514 30513  0 Sep10 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     30547 30514  0 Sep10 ?        00:00:00 python pat.py pat cat ../log/5/23.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+work     30691 17111  0 Sep12 ?        00:00:13 /home/work/env/apache2/bin/httpd -k start
+daemon   30805 14452  0 Dec09 ?        00:00:00 /root/apache2/bin/httpd -k start
+work     30870 17111  0 Nov22 ?        00:00:23 /home/work/env/apache2/bin/httpd -k start
+root     30986     1  0 Nov01 ?        00:00:00 /matrix/services/box_container_collector/casio-loader/bin/casio-loader64 -f taskset -c 11 /matrix/services/box_container_collector/box_container_collector -p /home/casio/log/casio-loader/status/box_container_collector
+root     30988 30986  0 Nov01 ?        00:18:52 /matrix/services/box_container_collector/box_container_collector
+root     31245     1  0 Nov01 ?        00:32:18 Matrix: Babysitter [4-14-0-12143]             
+root     31247 31245  0 Nov01 ?        00:10:12 Matrix: Agent [4-14-0-12143]                  
+root     31248 31245  0 Nov01 ?        00:02:42 Matrix: Executor [4-14-0-12143]               
+root     31249 31245  0 Nov01 ?        00:00:21 Matrix: [history-cleaner]                     
+root     31250 31249  0 Nov01 ?        00:09:18 /noah/bin/python2.7 /matrix/services/matrix-agent/watchdog/history-cleaner/main
+work     31861  5315  0 Sep19 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     31862 31861  0 Sep19 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])
+work     31901 31862  0 Sep19 ?        00:00:00 python pat.py pat cat ../log/0/23.monitor | egrep '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 60
+work     32005 17111  0 Sep26 ?        00:00:00 /home/work/env/apache2/bin/httpd -k start
+work     32094 17111  0 Nov11 ?        00:00:39 /home/work/env/apache2/bin/httpd -k start
+root     32239     1  0 Aug15 ?        00:00:00 ./hosteye -d
+root     32241 32239  0 Aug15 ?        00:03:09 ./hosteye -d
+root     32242 32239  0 Aug15 ?        00:01:17 ./hosteye -d
+root     32253     2  0 Jan23 ?        01:54:26 [loop0]
+root     32562     1  0 Dec07 ?        00:00:00 /bin/sh /noah/modules/d183d26c1cdbb8efda3e4a47044bbe50/NOAH/control start
+root     32563 32562  0 Dec07 ?        00:00:00 /bin/sh ../bin/supervise.noah-ccs-agent --run
+root     32573 32563  0 Dec07 ?        00:04:40 /noah/modules/d183d26c1cdbb8efda3e4a47044bbe50/bin/noah-ccs-agent
+work     32750 30241  0 Aug15 ?        00:00:00 sh -c sh /home/work/ec_test_service/script/dictrace/get_list.sh '(del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])' 2>/home/work/ec_test_service/script/dictrace//viplist.txt
+work     32751 32750  0 Aug15 ?        00:00:00 sh /home/work/ec_test_service/script/dictrace/get_list.sh (del_reason:[1-9]{1}[0-9]*[[:space:]])|(page_weight:([0-8]{1}|10)[[:space:]])

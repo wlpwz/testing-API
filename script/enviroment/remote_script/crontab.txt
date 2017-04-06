@@ -1,0 +1,1 @@
+55 10 * * * cd /home/spider/remote_ecplatform/script && sh -x clear_local_file.sh &> ./log.clear_local_file

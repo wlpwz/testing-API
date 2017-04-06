@@ -1,0 +1,75 @@
+<!--<script type="text/javascript" src="static/js/c2c_item_list.js" charset="utf-8"></script>-->
+<div class="container">
+
+	<div class="col-md-10">
+		<br/>
+		<div class="controls-row">
+				 <div class="mr10" style="display:inline;">
+							<input class="span2" id="keyword" type="text" value="{%$keyword%}">
+				 </div>
+				 <button class="btn btn-primary" type="button" id="search_btn">查询</button>
+				&nbsp;&nbsp;
+				 <button class="btn btn-info" type="button" id="new_requirement">新建需求</button>
+		</div>
+
+		<table id="select_sitemap" class="table table-bordered table-striped" style="width:1000px;">
+		 <thead>
+				<tr class="info">
+					<th width="5%">ID</th>
+					<th width="10%">需求名称</th>
+					<th width="20%">需求描述或MRD</th>
+					<th width="8%">分类</th>
+					<th width="10%">申请人</th>
+					<th width="10%">申请时间</th>
+					<th width="5%">状态</th>
+					<th width="10%">更新人</th>
+					<th width="10%">更新时间</th>
+					<th width="5%">操作</th>
+          <th width="7%">发送邮件</th>
+				</tr>
+			</thead>
+			<tbody>
+			{%foreach $list as $item%}
+				<tr>
+						<td>{%$item->id%}</td>
+						<td>{%$item->name%}</td>
+						<td>{%$item->file%}</td>
+						<td>{%$categoryList[$item->category]%}</td>
+						<td>{%$item->proposer%}</td>
+						<td>{%date("Y-m-d", $item->create_time)%}</td>
+						<td style="background-color:{%$bgColorList[$item->state]%}"><font color='white'>{%$stateList[$item->state]%}</font></td>
+						<td>{%$item->update_user%}</td>
+						<td>{%date("Y-m-d", $item->update_time)%}</td>
+						<td>
+						{%if Yii::app()->user->name|in_array:array("yangyanhong", "jiangningning","lizhengwen","caoxuehui","tangsuwen")%}
+							<button class="btn btn-mini btn-primary reset_btn_gray editor" type="button" item_id="{%$item->id%}">编辑</button>
+						{%/if%}
+						</td>
+             <td> 
+            {%if Yii::app()->user->name|in_array:array("yangyanhong", "jiangningning","lizhengwen","caoxuehui","tangsuwen")%}
+              <button class=" btn-primary" type="button" item_id="{%$item->id%}" onclick="javascript:window.location.href='?r=requirement/email&name={%$item->name%}&proposer={%$item->proposer%}&state={%$item->state%}&updater={%$item->update_user%}'">发送</button>
+            {%/if%}
+            </td>
+				</tr>
+			{%/foreach%}
+			</tbody>
+	</table>
+	<div class="pagination pagination-right" id="slidePage"></div>
+	
+	</section>
+	<div class="no-display" id="count">{%$count%}</div>
+	<div class="no-display" id="pagenum">{%$page%}</div>
+	<div class="no-display" id="pagesize">{%$pagesize%}</div>
+	<div class="no-display" id="offset">{%$offset%}</div>
+	
+</div>
+
+<script type="text/javascript" src="static/js/requirement_list.js" charset="utf-8"></script>
+<script type="text/javascript">
+  $('#select_sitemap').dataTable({'bAutoWidth':false, 'aaSorting':[[0,'desc']]});
+	$(document).ready(function(){
+		$('#new_requirement').click(function() {
+			window.location.href="?r=requirement/add";
+		});
+	});
+</script>
